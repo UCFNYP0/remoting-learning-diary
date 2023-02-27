@@ -1,0 +1,90 @@
+# Remote sensing data
+
+## summary
+
+### sensor scanner
+
+**How to acquire multispectral image data**
+
+-   push room
+
+Collection method:The detector is perpendicular to the direction of flight of the spacecraft and acquires one image at a time Data collection:Measure all pixels in a row of images at the same time Example:Spot AND Orbview
+
+-   Whisk broom
+
+Collection method:The detector collects the field of view scanned by the detector as the direction of the rotating mirror changes Data collection:Acquisition of images in a wide range of narrow spectral bands from the visible to mid-infrared spectrum Example:Landsat
+
+-   Compare
+
+A push broom scanner receives a stronger signal than a whisk broom scanner, because it looks at each pixel area for longer.
+
+### Connection
+
+#### geometric connection
+
+**why we need to doing the geometric connection?**
+
+-   View angle (off-nadir)
+-   Nadir means directly down
+-   Topography (e.g. hills not flat ground)
+-   Wind (if from a plane)
+-   Rotation of the earth (from satellite)
+
+**how we do the geometric connection?**
+
+-   Identify the GPS
+
+-   compute the geometric transformation coefficients and optain the geographic coordinates
+
+-   resample to populate new output grid
+
+**RMSE**
+
+the model with the lowest RMSE will fit best----always set the value is RMSE
+
+#### Atmospheric correction
+
+**why we do the atmospheric connection?**
+
+-   Atmospheric scattering
+
+-   Topographic attenuation
+
+And in biophysical parameters, we need to do the atmosphere connection. for example, temperature, lead area index, NDVI
+
+**Atmospheric correction types**
+
+-   Relative
+
+Normalize intensities of different bands within a single image and normalize intensities of bands from many dates to one date + Absolute
+
+use the atmospheric radiative transfer models to change digital brightness values into scaled reflectance and then compare these scaled surface reflectance values across the planet.
+
+data requirements--an atmopsheric model, local atmopsheric visibility, Image altitude
+
+#### Orthorectification correction
+
+-   when use the orthorectification correction?
+
+Raw satellite imagery contain distortions, which are induced by sensor orientation, topographical variation and the curvature of the earth.
+
+-   accurate elevation models are key.
+
+Feature distortion on raw imagery is heavily impacted by terrain variation. An accurate elevation model is required to calculate the effect of terrain variation on the image pixels.
+
+#### Radiometric Calibration
+
+Radiometric calibration is a crucial part of processing multispectral imagery, it enables the conversion of raw digital numbers (from the raw imagery), to sensor reflectance or irradiance, and then to surface reflectance values. Using a radiometric workflow enables the collection of repeatable reflectance data over different flights, dates, and weather conditions.
+
+*Without radiometric calibration, you may see the following effects:*
+
+-   Underexposed images, especially surrounding bright objects on the landscape
+-   Irregular coloration
+-   Index values, such as NDVI, that appear to change dramatically and unexpectedly + near roads or buildings
+-   Extreme banding or patchiness in the mosaic
+
+## Application
+
+It is important to apply the atmospheric correction to the remote sensing of coastal waters. The atmospheric correction process is applied to remove the effects of the atmosphere that contribute to the signal measured by a satellite sensor. The objective of this process is the discrimination, from top-of-atmosphere radiance, of the signal emerging from the sea carrying information on the materials suspended and dissolved in seawater. The atmospheric correction of coastal data is challenged by the presence of continental aerosols, bottom reflectance, and adjacency of land.
+
+## Reflection
