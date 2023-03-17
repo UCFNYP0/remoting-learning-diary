@@ -1,9 +1,3 @@
 # Introduce about Synthetic Aperture Radar (SAR)
 
-welcome to [URL](https://ucfnyp0.github.io/week2_xaringan/week2.html)
-
-```{r, echo = FALSE, out.width='40%'}
-xaringanExtra::embed_xaringan(
-  url = "https://ucfnyp0.github.io/week2_xaringan/week2.html",
-  ratio = "4:3")
-```
+This is my presentation. Please visit link: <https://ucfnyp0.github.io/week2_xaringan/week2.html>.
