@@ -21,7 +21,6 @@ book:
   date: "2023/2/27"
   chapters:
     - index.qmd
-    - intro.qmd
     - week1.qmd
     - week2.qmd
     - week3.qmd
