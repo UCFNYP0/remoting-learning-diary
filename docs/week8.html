@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>remoting learning diary - 4&nbsp; Remote sensing data</title>
+<title>remoting learning diary - 9&nbsp; week8</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week4.html" rel="next">
-<link href="./week2.html" rel="prev">
+<link href="./summary.html" rel="next">
+<link href="./week7.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Remote sensing data</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">week8</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -115,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week3.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Remote sensing data</span></a>
+  <a href="./week3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Remote sensing data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">week8</span></a>
+  <a href="./week8.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">week8</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -158,26 +158,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">4.1</span>  summary</a>
-  <ul class="collapse">
-  <li><a href="#sensor-scanner" id="toc-sensor-scanner" class="nav-link" data-scroll-target="#sensor-scanner"><span class="toc-section-number">4.1.1</span>  sensor scanner</a></li>
-  <li><a href="#connection" id="toc-connection" class="nav-link" data-scroll-target="#connection"><span class="toc-section-number">4.1.2</span>  Connection</a></li>
-  </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">4.2</span>  Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">4.3</span>  Reflection</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Remote sensing data</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">week8</span></h1>
 </div>
 
 
@@ -192,94 +180,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="summary" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.1</span> summary</h2>
-<section id="sensor-scanner" class="level3" data-number="4.1.1">
-<h3 data-number="4.1.1" class="anchored" data-anchor-id="sensor-scanner"><span class="header-section-number">4.1.1</span> sensor scanner</h3>
-<p><strong>How to acquire multispectral image data</strong></p>
-<ul>
-<li>push room</li>
-</ul>
-<p>Collection method:The detector is perpendicular to the direction of flight of the spacecraft and acquires one image at a time Data collection:Measure all pixels in a row of images at the same time Example:Spot AND Orbview</p>
-<ul>
-<li>Whisk broom</li>
-</ul>
-<p>Collection method:The detector collects the field of view scanned by the detector as the direction of the rotating mirror changes Data collection:Acquisition of images in a wide range of narrow spectral bands from the visible to mid-infrared spectrum Example:Landsat</p>
-<ul>
-<li>Compare</li>
-</ul>
-<p>A push broom scanner receives a stronger signal than a whisk broom scanner, because it looks at each pixel area for longer.</p>
-</section>
-<section id="connection" class="level3" data-number="4.1.2">
-<h3 data-number="4.1.2" class="anchored" data-anchor-id="connection"><span class="header-section-number">4.1.2</span> Connection</h3>
-<section id="geometric-connection" class="level4" data-number="4.1.2.1">
-<h4 data-number="4.1.2.1" class="anchored" data-anchor-id="geometric-connection"><span class="header-section-number">4.1.2.1</span> geometric connection</h4>
-<p><strong>why we need to doing the geometric connection?</strong></p>
-<ul>
-<li>View angle (off-nadir)</li>
-<li>Nadir means directly down</li>
-<li>Topography (e.g.&nbsp;hills not flat ground)</li>
-<li>Wind (if from a plane)</li>
-<li>Rotation of the earth (from satellite)</li>
-</ul>
-<p><strong>how we do the geometric connection?</strong></p>
-<ul>
-<li><p>Identify the GPS</p></li>
-<li><p>compute the geometric transformation coefficients and optain the geographic coordinates</p></li>
-<li><p>resample to populate new output grid</p></li>
-</ul>
-<p><strong>RMSE</strong></p>
-<p>the model with the lowest RMSE will fit best—-always set the value is RMSE</p>
-</section>
-<section id="atmospheric-correction" class="level4" data-number="4.1.2.2">
-<h4 data-number="4.1.2.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">4.1.2.2</span> Atmospheric correction</h4>
-<p><strong>why we do the atmospheric connection?</strong></p>
-<ul>
-<li><p>Atmospheric scattering</p></li>
-<li><p>Topographic attenuation</p></li>
-</ul>
-<p>And in biophysical parameters, we need to do the atmosphere connection. for example, temperature, lead area index, NDVI</p>
-<p><strong>Atmospheric correction types</strong></p>
-<ul>
-<li>Relative</li>
-</ul>
-<p>Normalize intensities of different bands within a single image and normalize intensities of bands from many dates to one date + Absolute</p>
-<p>use the atmospheric radiative transfer models to change digital brightness values into scaled reflectance and then compare these scaled surface reflectance values across the planet.</p>
-<p>data requirements–an atmopsheric model, local atmopsheric visibility, Image altitude</p>
-</section>
-<section id="orthorectification-correction" class="level4" data-number="4.1.2.3">
-<h4 data-number="4.1.2.3" class="anchored" data-anchor-id="orthorectification-correction"><span class="header-section-number">4.1.2.3</span> Orthorectification correction</h4>
-<ul>
-<li>when use the orthorectification correction?</li>
-</ul>
-<p>Raw satellite imagery contain distortions, which are induced by sensor orientation, topographical variation and the curvature of the earth.</p>
-<ul>
-<li>accurate elevation models are key.</li>
-</ul>
-<p>Feature distortion on raw imagery is heavily impacted by terrain variation. An accurate elevation model is required to calculate the effect of terrain variation on the image pixels.</p>
-</section>
-<section id="radiometric-calibration" class="level4" data-number="4.1.2.4">
-<h4 data-number="4.1.2.4" class="anchored" data-anchor-id="radiometric-calibration"><span class="header-section-number">4.1.2.4</span> Radiometric Calibration</h4>
-<p>Radiometric calibration is a crucial part of processing multispectral imagery, it enables the conversion of raw digital numbers (from the raw imagery), to sensor reflectance or irradiance, and then to surface reflectance values. Using a radiometric workflow enables the collection of repeatable reflectance data over different flights, dates, and weather conditions.</p>
-<p><em>Without radiometric calibration, you may see the following effects:</em></p>
-<ul>
-<li>Underexposed images, especially surrounding bright objects on the landscape</li>
-<li>Irregular coloration</li>
-<li>Index values, such as NDVI, that appear to change dramatically and unexpectedly + near roads or buildings</li>
-<li>Extreme banding or patchiness in the mosaic</li>
-</ul>
-</section>
-</section>
-</section>
-<section id="application" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="application"><span class="header-section-number">4.2</span> Application</h2>
-<p>It is important to apply the atmospheric correction to the remote sensing of coastal waters. The atmospheric correction process is applied to remove the effects of the atmosphere that contribute to the signal measured by a satellite sensor. The objective of this process is the discrimination, from top-of-atmosphere radiance, of the signal emerging from the sea carrying information on the materials suspended and dissolved in seawater. The atmospheric correction of coastal data is challenged by the presence of continental aerosols, bottom reflectance, and adjacency of land.</p>
-</section>
-<section id="reflection" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> Reflection</h2>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -417,13 +319,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduce about Synthetic Aperture Radar (SAR)</span></span>
+      <a href="./week7.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week7</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week4.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Policy</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
