@@ -1,0 +1,87 @@
+# Policy
+
+## Summary
+
+-   **study city:New York**\
+-   **study policy: OneNYC 2050**\
+-   **study topic: urban heated island**
+
+```{r echo=FALSE, out.width = "60%", fig.align='left', cache=FALSE, fig.cap= "OneNYC2050. Source: [OneNYC 2050](https://onenyc.cityofnewyork.us/strategies/a-livable-climate/)"}
+knitr::include_graphics('week4_data/onenyc2050.png')
+```
+
+### Background of Policy
+
+Climate change is a growing crisis for cities. High temperatures, on the other hand, are one of the most important aspects of the climate crisis, which has become the number one cause of death due to weather conditions in the United States. By the 2050s, the average temperature in New York City is expected to rise by 5.7 degrees Fahrenheit, and up to 1,500 people will die each summer from the heat.
+
+### Specific Policy
+
+**global policy : The Paris Agreement**
+
+The global response to the threat of climate change should be strengthened by achieving carbon neutrality and aggressive reductions in greenhouse gas emissions as soon as possible.
+
+**Metropolitan policy: OneNYC 2050: VOLUME 7 OF 9- A LIVABLE CLIMATE**
+
+-   Creating a liveable climate, responding positively to the Paris Agreement, taking action on climate change, especially for the most vulnerable communities, and upholding climate justice
+-   Commit to a just transition to carbon neutrality, climate resilience and a clean economy to improve environmental quality for all and redressing injustices
+-   Invest in infrastructure that mitigates climate risks, such as vegetation planting Forge partnerships on climate solutions across communities, sectors and regions to share the benefits
+
+## Application
+
+In this part, i will concern about how to use the EO data to resolve the urban heated island. In the following, there are one case and one reading to explain.
+
+### Major Summer Heat Spots using Landsat-8 Thermal Satellite data
+
++ **Data Collection**
+
+Earth observation data- the Landsat8 data in summer\
+Open street map- the great London
+
++ **Data Analysis**
+
+To generate a dataset that presents the LST spatial distribution and the corresponding hotspots for GLA, a five-year (2016-2020) time series of satellite-derived 100 m daytime LST images (in °C) is employed. The utilized data correspond only to summer months (i.e. June, July and August) so as to capture the hotspots with the most important impact on thermal discomfort, human health and energy demand.\
+In addition to the average LST (avgLST), the avgLST standard deviation, minimum and maximum for each city block are also estimated. \
+Finally, the former statistics are stored as new attributes in the Urban Atlas polygons and the updated vectors are then exported as a new shapefile. 
+
++ **Output**
+
+```{r echo=FALSE, out.width = "60%", fig.align='left', fig.cap= "Geopackage. Source: [Methodology and Deliverables Report_LONDON_ARTi](https://airdrive-secure.s3-eu-west-1.amazonaws.com/london/dataset/major-summer-heatspots-using-landsat-8-thermal-satellite-data/2021-03-17T17%3A25%3A49/Methodology%20and%20Deliverables%20Report_LONDON_ARTi.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJJDIMAIVZJDICKHA%2F20230317%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20230317T213731Z&X-Amz-Expires=300&X-Amz-Signature=1bbf57ee50c4c58ca33366d8d5d492a894efe46b3d1eecffc2d24b19dff6ca44&X-Amz-SignedHeaders=host)"}
+knitr::include_graphics('week4_data/OUTPUT1.png')
+```
+```{r echo=FALSE, out.width = "60%", fig.align='left', fig.cap= "Geopackage. Source: [Methodology and Deliverables Report_LONDON_ARTi](https://data.london.gov.uk/dataset/major-summer-heatspots-using-landsat-8-thermal-satellite-data)"}
+knitr::include_graphics('week4_data/OUTPUT2.png')
+```
+### Social Inequities in Urban Heat and Greenspace: Analyzing Climate Justice in Delhi,India
+
+This study quantifies exposure through the Urban Heat Risk Index (UHRI) and proximity to green spaces through the Normalised Difference Vegetation Index (NDVI) at ward level in Delhi to consider the urban social The distribution of inequalities in terms of burdens and benefits.
+
++ **the dependent variable **
+
+Heat exposure was estimated using the urban heat risk index (UHRI), a composite
+index of biophysical factors related to urban heat.And the equation is UHRI = [LST (z score) + NDBI (z score)] − NDVI (z score).\
+
+LST is the land surface temperature, which is calculated from the Landsat data. NDBI was assessed by calculating the NDVI (normalized difference vegetation index). The UHRI thus takes all three into account as an indication of the spatial extent and intensity of the urban heat island.
+
+```{r echo=FALSE, out.width = "60%", fig.align='left', fig.cap= "UHRI & NDVI. Source: [Social Inequities in Urban Heat and Greenspace: Analyzing Climate Justice in Delhi,India](https://www.mdpi.com/1660-4601/18/9/4800)"}
+knitr::include_graphics('week4_data/URHI.png')
+```
+
++ **the independent variable **
+
++ socio-demographic vulnerability, denoted by children, caste, and family size
++ housing-related vulnerability, denoted by household access to assets, electricity,and home ownership
++ employment-related vulnerability, denoted by literacy and involvement in agriculture
+
++ **the output **
+
+```{r echo=FALSE, out.width = "60%", fig.align='left', fig.cap= "Generalized estimating equation for predicting May UHRI using ward level socio-demographic variables. Source: [Social Inequities in Urban Heat and Greenspace: Analyzing Climate Justice in Delhi,India](https://www.mdpi.com/1660-4601/18/9/4800)"}
+knitr::include_graphics('week4_data/urhi2.png')
+```
+
+The UHRI is significantly positively associated with the proportion of children, SC, agricultural workers, households with assets and households with electricity (p < 0.01), but negatively associated (p < 0.005) with the proportion of educated residents, households that own a home and larger households.\
+
+Through correlation analysis and spatial visualisation of areas with high heat exposure indices, government funding for social vulnerability related factors such as households with severe poverty and electricity, schools, in addition to focusing not only on the heat island environment in the central city, it was shown through the strong correlation between agricultural labour and NDVI that the government should also focus on the population in the urban periphery. The correlation study aims to make a valuable contribution to the integration of climate justice considerations into climate change planning in Delhi by demonstrating which vulnerable groups should be prioritised in the policy if the urban heated island.
+
+## Reflection
+
+Through the focus on high temperatures in the New York City 2050 plan, I have focused my attention on urban heat island issues, hoping to disentangle and propose specific strategies for 2050 planning goals through remote sensing data analysis, rather than macro planning. An example is the delivery of the UK Hotspot Toolkit. Through the collection of EO data, SUHI data is obtained and spatially visualised to give the government and citizens a clear picture of the hotspots that need to be focused on, providing specific geographical information on the location of the next solutions to the urban heat island problem. The Indian literature, on the other hand, provides possible correlates for addressing climate equity and can assist the government in providing direction for addressing equity issues. However, I believe that the current work is still far from adequate and that workflows need to be proposed for New York to mitigate the urban heat island problem and achieve climate equity, such as how to green the infrastructure and how to conduct urban temperature implementation monitoring.
