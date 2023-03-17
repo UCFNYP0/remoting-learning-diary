@@ -2,21 +2,21 @@
   {
     "objectID": "week1.html#summary",
     "href": "week1.html#summary",
-    "title": "2  An Introduction to Remote Sensing",
+    "title": "2  Introduction about Remote-sensing",
     "section": "2.1 Summary",
     "text": "2.1 Summary\n\n2.1.1 The introduction of remote sensing\nRemote sensing collects remotely sensed images by special cameras, which help researchers “sense” things about the earth. And it is that the process of detecting and monitoring the physical characteristics of an area by measuring reflected and emitted radiation from a certain distance.For example, forest fires can be mapped from space, seeing a much larger area than from the ground.\n\n\n2.1.2 Sensor\n\n\n\n\n\n\n\nActive sensor\nPassive sensor\n\n\n\n\nUsing light sources from its own\nUsing light sources from the sun\n\n\ncannot penetrate dense cloud cover\npenetrate the atmosphere\n\n\n\n\n\n\n\n\n\n\n2.1.3 Remotely sensed data\n\nFormat\n\nThe remotely sensed data is raster,mostly GeoTIFF. But LiDAR is the point data.\n\nResolution\n\nResolution has a important role in how data from a sensor can be used. there are four types of resolution to consider for any dataset-radiometric, spatial, spectral, and temporal.\n\n\n\n\n\n\n\n\nResolution Types\nDescription\nExample\n\n\n\n\nspatial\nthe size of the raster grid per pixel\n20cm or 30m\n\n\nspectral\nthe number of bands\nBand 2 - blue (0.45-0.51 wavelength)\n\n\ntemporal\nthe time it revisits\ndaily or every 7 days\n\n\nRadiometric\nthe number of bits representing the energy recorded\n2 bit, 4 bit, or 8 bit"
   },
   {
     "objectID": "week1.html#application",
     "href": "week1.html#application",
-    "title": "2  An Introduction to Remote Sensing",
+    "title": "2  Introduction about Remote-sensing",
     "section": "2.2 Application",
     "text": "2.2 Application\nRemote sensing has a wide range of applications in many fields. For example, Remote sensing is widely used in agriculture.Traditionally, satellite imagery has been used for crop condition assessment and type mapping of crops, but due to the limited resolution of the sensors, satellites have been used over large areas. With technological advances, finer subscale green can enable remote sensing applications in the field for disaster assessments such as droughts and floods(Wójtowicz M,2016).Through the application of remote sensing, producers and governments can prevent natural disasters in advance and minimise economic losses.Remote sensing also plays an important role in crop yield forecasting. In the Southern Alberta of Canada, for example, remote sensing is used to assess the extent to which the area is vulnerable to drought conditions and to make yield forecasts. This can provide some support for local agricultural planning and reduce economic risk(Xu W,2011)."
   },
   {
     "objectID": "week1.html#reflection",
     "href": "week1.html#reflection",
-    "title": "2  An Introduction to Remote Sensing",
+    "title": "2  Introduction about Remote-sensing",
     "section": "2.3 Reflection",
     "text": "2.3 Reflection\nThrough this week’s study, I have gained an initial understanding of remote sensing, which I have not studied before. It is useful for me.I have learnt about the types of remote sensors, the format of remote sensing data and the resolution this week. However, my extra-curricular study of remote sensing is far from adequate. I have only studied the application areas of remote sensing in detail from agriculture this week, but I have not studied marine exploration and emergency disaster relief in depth."
   },

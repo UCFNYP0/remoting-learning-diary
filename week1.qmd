@@ -1,4 +1,4 @@
-# An Introduction to Remote Sensing
+# Introduction about Remote-sensing
 
 ## Summary
 
@@ -26,7 +26,7 @@ The remotely sensed data is raster,mostly GeoTIFF. But LiDAR is the point data.
 Resolution has a important role in how data from a sensor can be used. there are four types of resolution to consider for any dataset-radiometric, spatial, spectral, and temporal.
 
 | Resolution Types | Description                                         | Example                              |
-|:-----------------|:------------------------------|:----------------------|
+|:------------------|:------------------------------|:----------------------|
 | spatial          | the size of the raster grid per pixel               | 20cm or 30m                          |
 | spectral         | the number of bands                                 | Band 2 - blue (0.45-0.51 wavelength) |
 | temporal         | the time it revisits                                | daily or every 7 days                |
