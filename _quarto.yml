@@ -17,7 +17,7 @@ book:
     reader-mode: true
   repo-url: https://github.com/UCFNYP0/remoting-learning-diary
   repo-actions: [edit, issue]
-  author: "Yujin Pan"
+  author: "ucfnyo0"
   date: "2023/2/27"
   chapters:
     - index.qmd
@@ -29,7 +29,6 @@ book:
     - week6.qmd
     - week7.qmd
     - week8.qmd
-    - summary.qmd
     - references.qmd
 
 bibliography: references.bib
