@@ -51,7 +51,7 @@ What's more, this study suggests that careful consideration is required for land
 
 **Comment**
 
-This paper uses analysis of the suhi effect by analysing the effect of land cover type on surface temperature, and uses multi-temporal airborne thermal imagery to analyse detailed urban thermal characteristics of urban centres. In terms of data set acquisition, landsat is useful for studying the suhi effect at the mesoscopic scale, but it is not clear which specific surfaces contribute to the extent of the heat island effect. For high-resolution satellite data, further acquisition is needed by means of high-resolution data acquisition to delve into the urban heat island problem in Shijiazhuang.
+This paper uses analysis of the suhi effect by analysing the effect of land cover type on surface temperature, and uses multi-temporal airborne thermal imagery to analyse detailed urban thermal characteristics of urban centres. In terms of data set acquisition, landsat is useful for studying the suhi effect at the mesoscopic scale, but it is not clear which specific surfaces contribute to the extent of the heat island effect. For high-resolution satellite data, further acquisition is needed by means of high-resolution data acquisition to delve into the urban heat island problem in Shijiazhuang[@liu2015b].
 
 ## Application
 

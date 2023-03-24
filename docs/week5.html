@@ -83,6 +83,25 @@ code span.st { color: #4070a0; } /* String */
 code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -193,7 +212,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduce about Synthetic Aperture Radar (SAR)</span></a>
+  <a href="./week2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><span class="citation" data-cites="freeman1992">(</span></span></a><a href="#ref-freeman1992" role="doc-biblioref">Freeman 1992</a>)Introduce about Synthetic Aperture Radar (SAR)
   </div>
 </li>
         <li class="sidebar-item">
@@ -409,7 +428,7 @@ Extracting the coefficients and intercepts of the model</li>
 </section>
 <section id="application" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> Application</h2>
-<p><strong>Mapping of Flood Areas Using Landsat with Google Earth Engine</strong></p>
+<p><strong>Mapping of Flood Areas Using Landsat with Google Earth Engine</strong><span class="citation" data-cites="goodin2015">(<a href="references.html#ref-goodin2015" role="doc-biblioref">Goodin, Anibas, and Bezymennyi 2015</a>)</span></p>
 <p>The flood mapping algorithm is presented in this study. The algorithm uses Landsat data to generate historical global flood extent at 30m resolution. Landsat satellite images from 1984 to the present were first collected, pre-processed with layer filtering to classify water bodies, and “temporary” waters were selected as areas that were inundated during the flood event.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
@@ -428,6 +447,14 @@ Extracting the coefficients and intercepts of the model</li>
 <p>Through this week, I have learnt about the powerful remote sensing data analysis capabilities of GEE and have learnt the basic operation of the GEE platform. Reading through the literature the GEE platform can help decision makers in urban related professional fields to better understand the dynamics of urban development. Through remote sensing technology, changes in urban development can be monitored in real time, including changes in urban sprawl, building heights, traffic flow, etc. This information can provide strong data to support urban planning and policy. For example, to review the analysis of the New York heat island problem in week four, we can use the GEE and landsat remote sensing datasets to visualise and analyse the temperature of New York City and calculate the heat island intensity, I have accessed the relevant code materials and read them, which will be of great help to me in my subsequent report.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-freeman1992" class="csl-entry" role="doc-biblioentry">
+Freeman, A. 1992. <span>“SAR Calibration: An Overview.”</span> <em>IEEE Transactions on Geoscience and Remote Sensing</em> 30 (6): 1107–21. <a href="https://doi.org/10.1109/36.193786">https://doi.org/10.1109/36.193786</a>.
+</div>
+<div id="ref-goodin2015" class="csl-entry" role="doc-biblioentry">
+Goodin, Douglas G., Kyle L. Anibas, and Maksym Bezymennyi. 2015. <span>“Mapping Land Cover and Land Use from Object-Based Classification: An Example from a Complex Agricultural Landscape.”</span> <em>International Journal of Remote Sensing</em> 36 (18): 4702–23. <a href="https://doi.org/10.1080/01431161.2015.1088674">https://doi.org/10.1080/01431161.2015.1088674</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

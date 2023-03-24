@@ -124,7 +124,7 @@ var NDVI = clip.normalizedDifference([SR_B5, SR_B4]);
 
 ## Application
 
-**Mapping of Flood Areas Using Landsat with Google Earth Engine**
+**Mapping of Flood Areas Using Landsat with Google Earth Engine**[@goodin2015]
 
 The flood mapping algorithm is presented in this study. The algorithm uses Landsat data to generate historical global flood extent at 30m resolution. Landsat satellite images from 1984 to the present were first collected, pre-processed with layer filtering to classify water bodies, and "temporary" waters were selected as areas that were inundated during the flood event.
 
@@ -136,4 +136,4 @@ The application of this research has a significant role to play in land use, eme
 
 ## Relection
 
-Through this week, I have learnt about the powerful remote sensing data analysis capabilities of GEE and have learnt the basic operation of the GEE platform. Reading through the literature the GEE platform can help decision makers in urban related professional fields to better understand the dynamics of urban development. Through remote sensing technology, changes in urban development can be monitored in real time, including changes in urban sprawl, building heights, traffic flow, etc. This information can provide strong data to support urban planning and policy. For example, to review the analysis of the New York heat island problem in week four, we can use the GEE and landsat remote sensing datasets to visualise and analyse the temperature of New York City and calculate the heat island intensity, I have accessed the relevant code materials and read them, which will be of great help to me in my subsequent report. 
+Through this week, I have learnt about the powerful remote sensing data analysis capabilities of GEE and have learnt the basic operation of the GEE platform. Reading through the literature the GEE platform can help decision makers in urban related professional fields to better understand the dynamics of urban development. Through remote sensing technology, changes in urban development can be monitored in real time, including changes in urban sprawl, building heights, traffic flow, etc. This information can provide strong data to support urban planning and policy. For example, to review the analysis of the New York heat island problem in week four, we can use the GEE and landsat remote sensing datasets to visualise and analyse the temperature of New York City and calculate the heat island intensity, I have accessed the relevant code materials and read them, which will be of great help to me in my subsequent report.

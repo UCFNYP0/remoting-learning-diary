@@ -4,7 +4,7 @@
 
 ### The introduction of remote sensing
 
-Remote sensing collects remotely sensed images by special cameras, which help researchers "sense" things about the earth. And it is that the process of detecting and monitoring the physical characteristics of an area by measuring reflected and emitted radiation from a certain distance.For example, forest fires can be mapped from space, seeing a much larger area than from the ground.
+Remote sensing collects remotely sensed images by special cameras, which help researchers "sense" things about the earth. And it is that the process of detecting and monitoring the physical characteristics of an area by measuring reflected and emitted radiation from a certain distance.For example, forest fires can be mapped from space, seeing a much larger area than from the ground[@earthsciencedatasystems2019].
 
 ### Sensor
 
@@ -68,22 +68,23 @@ Resolution has a important role in how data from a sensor can be used. there are
 
 ## Application
 
-Remote sensing has a wide range of applications in many fields. For example, Remote sensing is widely used in agriculture.Traditionally, satellite imagery has been used for crop condition assessment and type mapping of crops, but due to the limited resolution of the sensors, satellites have been used over large areas. With technological advances, finer subscale green can enable remote sensing applications in the field for disaster assessments such as droughts and floods(Wójtowicz M,2016).What's more, the NDVI index is used most frequently to determine the condition, developmental stages and biomass of cultivated plants and to forecasts their yields. The NDVI has become the most commonly used vegetation index (Wallace et al. 2004, Calvao and Palmeirim 2004).Through the application of remote sensing, producers and governments can prevent natural disasters in advance and minimise economic losses.\
+Remote sensing has a wide range of applications in many fields. For example, Remote sensing is widely used in agriculture.Traditionally, satellite imagery has been used for crop condition assessment and type mapping of crops, but due to the limited resolution of the sensors, satellites have been used over large areas. With technological advances, finer subscale green can enable remote sensing applications in the field for disaster assessments such as droughts and floods .What's more, the NDVI index is used most frequently to determine the condition, developmental stages and biomass of cultivated plants and to forecasts their yields. The NDVI has become the most commonly used vegetation index (Wallace et al. 2004, Calvao and Palmeirim 2004).Through the application of remote sensing, producers and governments can prevent natural disasters in advance and minimise economic losses.\
 
-Remote sensing also plays an important role in crop yield forecasting. In the Southern Alberta of Canada, for example, remote sensing is used to assess the extent to which the area is vulnerable to drought conditions and to make yield forecasts. This can provide some support for local agricultural planning and reduce economic risk(Xu W,2011).\
+Remote sensing also plays an important role in crop yield forecasting. In the Southern Alberta of Canada, for example, remote sensing is used to assess the extent to which the area is vulnerable to drought conditions and to make yield forecasts. This can provide some support for local agricultural planning and reduce economic risk[@xu2011].\
 
-+ Study area: Agricultural production in southern Alberta\
+-   Study area: Agricultural production in southern Alberta\
 
-+ Data selection: In order to assess in detail the vulnerability of agriculture to drought, remotely sensed imagery was used in the empirical analysis. The years 1998, 1999 and 2001 were selected as representative of changes in precipitation conditions. Two Landsat TM/ETM+ images for each selected year were also acquired and overlaid to improve the accuracy of the land use cover.\
+-   Data selection: In order to assess in detail the vulnerability of agriculture to drought, remotely sensed imagery was used in the empirical analysis. The years 1998, 1999 and 2001 were selected as representative of changes in precipitation conditions. Two Landsat TM/ETM+ images for each selected year were also acquired and overlaid to improve the accuracy of the land use cover.\
 
-+ Research methodology: In this paper, sensitivity and health status and exposure were selected as the three influencing factors of vulnerability.\
-The first step was to identify crop types using supervised classification to prepare the ground for measuring agricultural vulnerability later. And the NDVI of the image area classified as a cereal crop is used as the main independent variable for yield estimation in the subsequent regression analysis.\
-By calculating the vulnerability coefficient of the crop, the regression is then used to predict the crop yield.
+-   Research methodology: In this paper, sensitivity and health status and exposure were selected as the three influencing factors of vulnerability.\
+    The first step was to identify crop types using supervised classification to prepare the ground for measuring agricultural vulnerability later. And the NDVI of the image area classified as a cereal crop is used as the main independent variable for yield estimation in the subsequent regression analysis.\
+    By calculating the vulnerability coefficient of the crop, the regression is then used to predict the crop yield.
+
 ```{r echo=FALSE, out.width='70%', fig.align='left', fig.cap= " Spatial distribution of average crop yield (1998,1999, and 2001)"}
 knitr::include_graphics('week1data/grain1.gif')
 ```
 
-+ Comment
+-   Comment
 
 The authors have used remote sensing data to predict crop yields and to analyse the impact of drought on a large area of the region, providing powerful data for local agricultural development. The remote sensing data is available free of charge as open source data, which certainly facilitates agricultural analysis.
 

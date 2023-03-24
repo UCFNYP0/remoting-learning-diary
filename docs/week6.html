@@ -83,6 +83,25 @@ code span.st { color: #4070a0; } /* String */
 code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -193,7 +212,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduce about Synthetic Aperture Radar (SAR)</span></a>
+  <a href="./week2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><span class="citation" data-cites="freeman1992">(</span></span></a><a href="#ref-freeman1992" role="doc-biblioref">Freeman 1992</a>)Introduce about Synthetic Aperture Radar (SAR)
   </div>
 </li>
         <li class="sidebar-item">
@@ -218,7 +237,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week7.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week7</span></a>
+  <a href="./week7.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classificaiton 2</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -362,8 +381,8 @@ For example, we can predict future house prices based on the existing house pric
 <h5 data-number="6.1.1.2.3" class="anchored" data-anchor-id="difference-between-the-decision-and-regression-tree"><span class="header-section-number">6.1.1.2.3</span> Difference between the decision and regression tree</h5>
 <table class="table">
 <colgroup>
-<col style="width: 23%">
-<col style="width: 41%">
+<col style="width: 25%">
+<col style="width: 40%">
 <col style="width: 34%">
 </colgroup>
 <thead>
@@ -572,7 +591,7 @@ For example, we can predict future house prices based on the existing house pric
 </section>
 <section id="application" class="level3" data-number="6.1.2">
 <h3 data-number="6.1.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.1.2</span> Application</h3>
-<p><strong>Forest cover change and illegal logging in the Ukrainian Carpathians from 1988 to 2007</strong></p>
+<p><strong>Forest cover change and illegal logging in the Ukrainian Carpathians from 1988 to 2007</strong><span class="citation" data-cites="kuemmerle2009">(<a href="references.html#ref-kuemmerle2009" role="doc-biblioref">Kuemmerle et al. 2009</a>)</span></p>
 <p>This paper focuses that the authors’ use Landsat TM/ETM+ imagery and support vector machines (SVM) to derive forest change trajectories across the Ukrainian Carpathians between 1988 and 2007. By mapping forest cover changes and assessing the extent of illegal logging and reforestation in the Ukrainian Carpathians. As a result of the study, the authors found that a general change in forest cover occurred in the Ukrainian Carpathians between 1988 and 2007, mainly in the form of forest decline in the interior of the Carpathians.<br>
 </p>
 <ul>
@@ -630,6 +649,14 @@ The authors chose svm as the analysis method, which can better handle large-scal
 <p>In addition, in reviewing the data, he found that land cover classification can also be performed by deep learning methods. He trained a deep neural network for classification through a large amount of data. In remote sensing image classification, deep learning can use convolutional neural networks (CNNs) to extract and classify spatial features in images. This is an area that I am not currently exposed to and have developed an interest in myself, so I hope to learn something about it later.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-freeman1992" class="csl-entry" role="doc-biblioentry">
+Freeman, A. 1992. <span>“SAR Calibration: An Overview.”</span> <em>IEEE Transactions on Geoscience and Remote Sensing</em> 30 (6): 1107–21. <a href="https://doi.org/10.1109/36.193786">https://doi.org/10.1109/36.193786</a>.
+</div>
+<div id="ref-kuemmerle2009" class="csl-entry" role="doc-biblioentry">
+Kuemmerle, Tobias, Oleh Chaskovskyy, Jan Knorn, Volker C. Radeloff, Ivan Kruhlov, William S. Keeton, and Patrick Hostert. 2009. <span>“Forest Cover Change and Illegal Logging in the Ukrainian Carpathians in the Transition Period from 1988 to 2007.”</span> <em>Remote Sensing of Environment</em> 113 (6): 1194–1207. <a href="https://doi.org/10.1016/j.rse.2009.02.006">https://doi.org/10.1016/j.rse.2009.02.006</a>.
+</div>
+</div>
 </section>
 </section>
 
@@ -890,7 +917,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week7.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week7</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classificaiton 2</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

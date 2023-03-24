@@ -69,7 +69,7 @@ The importance of attributes with respect to predicting the target is reflected 
 ##### Difference between the decision and regression tree
 
 |                        | Decision Tree                                                  | Regression Tree                                      |
-|:----------------|:-----------------------------|:------------------------|
+|:-----------------|:----------------------------|:------------------------|
 | Dataset selected       | Either uncontinous or continous data                           | must be continous data                               |
 | How to divide the tree | Find segments with a strong majority of a discrete class label | Employ splitting metrics based on variance reduction |
 | Goal                   | Classification                                                 | Predicting the value                                 |
@@ -249,7 +249,7 @@ However, this practical has some limitation.I should classify the landcover more
 
 ### Application
 
-**Forest cover change and illegal logging in the Ukrainian Carpathians from 1988 to 2007**
+**Forest cover change and illegal logging in the Ukrainian Carpathians from 1988 to 2007**[@kuemmerle2009]
 
 This paper focuses that the authors' use Landsat TM/ETM+ imagery and support vector machines (SVM) to derive forest change trajectories across the Ukrainian Carpathians between 1988 and 2007. By mapping forest cover changes and assessing the extent of illegal logging and reforestation in the Ukrainian Carpathians. As a result of the study, the authors found that a general change in forest cover occurred in the Ukrainian Carpathians between 1988 and 2007, mainly in the form of forest decline in the interior of the Carpathians.\
 

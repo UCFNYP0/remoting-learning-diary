@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -130,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduce about Synthetic Aperture Radar (SAR)</span></a>
+  <a href="./week2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><span class="citation" data-cites="freeman1992">(</span></span></a><a href="#ref-freeman1992" role="doc-biblioref">Freeman 1992</a>)Introduce about Synthetic Aperture Radar (SAR)
   </div>
 </li>
         <li class="sidebar-item">
@@ -155,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week7.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week7</span></a>
+  <a href="./week7.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classificaiton 2</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -334,7 +353,8 @@ Example:Landsat</p>
 </section>
 <section id="application" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="application"><span class="header-section-number">3.2</span> Application</h2>
-<p><strong>Multispectral UAS Data Accuracy for Different Radiometric Calibration Methods </strong> The performance of five radiometric calibration methods commonly used was investigated in this study. Multispectral imagery was collected using a Parrot Sequoia camera. Unmanned aircraft systems (UAS) allow us to collect aerial data at high spatial and temporal resolution in this study. And radiometric calibration is an essential step of UAS data processing, mainly when imagery is acquired for the analysis of biophysical processes, to monitor a study area over time, and to compare different sensors .The five methods are one-point calibration (method A), one-point calibration plus sunshine sensor (method B), pre-calibration using the simplified empirical line calibration (method C) , one-point calibration plus sunshine sensor plus post-calibration(method D), and post-calibration using the simplified empirical line calibration (method E). The paper found there are no method that can have the best performance in every band.</p>
+<p><strong>Multispectral UAS Data Accuracy for Different Radiometric Calibration Methods</strong></p>
+<p>The performance of five radiometric calibration methods commonly used was investigated in this study. Multispectral imagery was collected using a Parrot Sequoia camera. Unmanned aircraft systems (UAS) allow us to collect aerial data at high spatial and temporal resolution in this study. And radiometric calibration is an essential step of UAS data processing, mainly when imagery is acquired for the analysis of biophysical processes, to monitor a study area over time, and to compare different sensors .The five methods are one-point calibration (method A), one-point calibration plus sunshine sensor (method B), pre-calibration using the simplified empirical line calibration (method C) , one-point calibration plus sunshine sensor plus post-calibration(method D), and post-calibration using the simplified empirical line calibration (method E). The paper found there are no method that can have the best performance in every band.</p>
 <p>Through comparing the five methods, there are the RmsE values.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
@@ -359,7 +379,7 @@ Example:Landsat</p>
 </div>
 <p>On average, method D minimized error across bands and grey values closely followed by method E. Method D resulted in better data accuracy than method B, and results indicated that data quality provided by the manufacturer-recommended calibration could be further improved with an empirical calibration. Method E resulted in better data accuracy than method C, and results showed that calibrating the processed uncalibrated rasters would be preferable to calibrating the raw images before data processing. Method A provided lower data accuracy than the other four methods in the green, red, and red-edge bands. Method A failed to calibrate acquired imagery in the NIR band. The result is that there are no method that can have the best performance in every band.<br>
 </p>
-<p><strong>Multispectral UAS Data Accuracy for Different Radiometric Calibration Methods </strong></p>
+<p><strong>Multispectral UAS Data Accuracy for Different Radiometric Calibration Methods</strong><span class="citation" data-cites="poncet2019">(<a href="references.html#ref-poncet2019" role="doc-biblioref">Poncet et al. 2019</a>)</span></p>
 <p>What’s more, about the geometric connection,this paper shows the geometric correction process done in the Coimbatore imagery to improve the quality and it shows the process of distortion removed .Finally they get the georectified image using ERDAS(Baboo and Devi, 2011).</p>
 <p>A geometric correction of the image is required whenever the image is to be compared with existing maps or with other images. The goal of image rectification is to facilitate the overlay of additional imagery and other geographic data sets. A standard map area, with boundaries set in UTM, is established for each scene, thus all image files for the same region, once rectified, will occupy the same map area.Once the raw remote sensing digital data has been acquired, it is then processed into usable information.Processing digital data involves changing the data to correct for certain types of distortions. Whenever data is changed to correct for one type of distortion, the possibility of the creating another type of distortion exists. There is an example to show the importance on the pre-processing.Because the Coordinates not in British National Grid coordinates.</p>
 <div class="cell" data-layout-align="left">
@@ -389,6 +409,14 @@ Example:Landsat</p>
 <p>In this week’s study, I learnt about remote scanners and calibration, among other things. Before using remote sensing data, we have to carry out data pre-processing, such as atmospheric correction, to eliminate the influence of atmospheric medium on the brightness value of remote sensing images, so that the remote sensing images reflect the real surface reflectance of the features, which can provide the basic data for the subsequent extraction and application of remote sensing information. What’s more, geometric correction of remote sensing is a fundamental step in remote sensing image processing and an important link in the application of remote sensing technology. Through geometric correction, accurate correspondence can be established between remote sensing images in terms of spatial position and actual ground position, providing basic data for remote sensing information extraction and application.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-freeman1992" class="csl-entry" role="doc-biblioentry">
+Freeman, A. 1992. <span>“SAR Calibration: An Overview.”</span> <em>IEEE Transactions on Geoscience and Remote Sensing</em> 30 (6): 1107–21. <a href="https://doi.org/10.1109/36.193786">https://doi.org/10.1109/36.193786</a>.
+</div>
+<div id="ref-poncet2019" class="csl-entry" role="doc-biblioentry">
+Poncet, Aurelie M., Thorsten Knappenberger, Christian Brodbeck, Michael Fogle, Joey N. Shaw, and Brenda V. Ortiz. 2019. <span>“Multispectral UAS Data Accuracy for Different Radiometric Calibration Methods.”</span> <em>Remote Sensing</em> 11 (16): 1917. <a href="https://doi.org/10.3390/rs11161917">https://doi.org/10.3390/rs11161917</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -643,8 +671,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./week2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduce about Synthetic Aperture Radar (SAR)</span></span>
-      </a>          
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><span class="citation" data-cites="freeman1992">(</span></span></span></a><a href="#ref-freeman1992" role="doc-biblioref">Freeman 1992</a>)Introduce about Synthetic Aperture Radar (SAR)
+                
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week4.html" class="pagination-link">

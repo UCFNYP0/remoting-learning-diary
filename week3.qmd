@@ -112,28 +112,30 @@ Radiometric calibration is a crucial part of processing multispectral imagery, i
 
 ## Application
 
-**Multispectral UAS Data Accuracy for Different Radiometric Calibration Methods **
+**Multispectral UAS Data Accuracy for Different Radiometric Calibration Methods**
+
 The performance of five radiometric calibration methods commonly used was investigated in this study. Multispectral imagery was collected using a Parrot Sequoia camera. Unmanned aircraft systems (UAS) allow us to collect aerial data at high spatial and temporal resolution in this study. And radiometric calibration is an essential step of UAS data processing, mainly when imagery is acquired for the analysis of biophysical processes, to monitor a study area over time, and to compare different sensors .The five methods are one-point calibration (method A), one-point calibration plus sunshine sensor (method B), pre-calibration using the simplified empirical line calibration (method C) , one-point calibration plus sunshine sensor plus post-calibration(method D), and post-calibration using the simplified empirical line calibration (method E). The paper found there are no method that can have the best performance in every band.
 
-Through comparing the five methods, there are  the RmsE values.
+Through comparing the five methods, there are the RmsE values.
+
 ```{r echo=FALSE, out.width='70%', fig.align='left', fig.cap= "Root-mean-square error (RMSE) values "}
 knitr::include_graphics('week3data/01.png')
 ```
 
+Through the RMSE values for each calibration method, the author found the following results. Data accuracy varied between the multispectral bands (Figure 7). For methods B and E, pixel reflectance values were more accurate in the red-edge and NIR band than in the green and red bands. For method D, pixel reflectance values were more accurate in the NIR and red-edge bands than in the green and red bands. Maximum differences between bands were observed for methods B and D. Minimum differences were observed for method E, closely followed by method C.
 
-Through the RMSE values for each calibration method, the author found the following results. Data accuracy varied between the multispectral bands (Figure 7). For methods B and E, pixel reflectance values were more accurate in the red-edge and NIR band than in the green and red bands. For method D, pixel reflectance values were more accurate in the NIR and red-edge bands than in the green and red bands. Maximum differences between bands were observed for methods B and D. Minimum differences were observed for method E, closely followed by method C. 
 ```{r echo=FALSE, out.width='70%', fig.align='left', fig.cap= "Distribution of root-mean-square error (RMSE) values for each calibration method"}
 knitr::include_graphics('week3data/02.png')
 ```
 
 On average, method D minimized error across bands and grey values closely followed by method E. Method D resulted in better data accuracy than method B, and results indicated that data quality provided by the manufacturer-recommended calibration could be further improved with an empirical calibration. Method E resulted in better data accuracy than method C, and results showed that calibrating the processed uncalibrated rasters would be preferable to calibrating the raw images before data processing. Method A provided lower data accuracy than the other four methods in the green, red, and red-edge bands. Method A failed to calibrate acquired imagery in the NIR band. The result is that there are no method that can have the best performance in every band.\
 
-**Multispectral UAS Data Accuracy for Different Radiometric Calibration Methods **
+**Multispectral UAS Data Accuracy for Different Radiometric Calibration Methods**[@poncet2019]
 
 What's more, about the geometric connection,this paper shows the geometric correction process done in the Coimbatore imagery to improve the quality and it shows the process of distortion removed .Finally they get the georectified image using ERDAS(Baboo and Devi, 2011).
 
-A geometric correction of the image is required whenever the image is to be compared with existing maps or with other images. 
-The goal of image rectification is to facilitate the overlay of additional imagery and other geographic data sets. A standard map area, with boundaries set in UTM, is established for each scene, thus all image files for the same region, once rectified, will occupy the same map area.Once the raw remote sensing digital data has been acquired, it is then processed into usable information.Processing digital data involves changing the data to correct for certain types of distortions. Whenever data is changed to correct for one type of distortion, the possibility of the creating another type of distortion exists. There is an example to show the importance on the pre-processing.Because the Coordinates not in British National Grid coordinates. 
+A geometric correction of the image is required whenever the image is to be compared with existing maps or with other images. The goal of image rectification is to facilitate the overlay of additional imagery and other geographic data sets. A standard map area, with boundaries set in UTM, is established for each scene, thus all image files for the same region, once rectified, will occupy the same map area.Once the raw remote sensing digital data has been acquired, it is then processed into usable information.Processing digital data involves changing the data to correct for certain types of distortions. Whenever data is changed to correct for one type of distortion, the possibility of the creating another type of distortion exists. There is an example to show the importance on the pre-processing.Because the Coordinates not in British National Grid coordinates.
+
 ```{r echo=FALSE, out.width='70%', fig.align='left', fig.cap= "Geometrically not corrected Coimbatore Imagery"}
 knitr::include_graphics('week3data/03.png')
 ```
