@@ -145,12 +145,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week5</span></a>
+  <a href="./week5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week6</span></a>
+  <a href="./week6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -160,12 +160,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week8</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="./week8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Urban Heated Island</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -218,13 +213,37 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-number="3.1.1" class="anchored" data-anchor-id="sensor-scanner"><span class="header-section-number">3.1.1</span> sensor scanner</h3>
 <p><strong>How to acquire multispectral image data</strong></p>
 <ul>
-<li>push room</li>
+<li>push broom</li>
 </ul>
-<p>Collection method:The detector is perpendicular to the direction of flight of the spacecraft and acquires one image at a time Data collection:Measure all pixels in a row of images at the same time Example:Spot AND Orbview</p>
+<p><strong>Collection method</strong>: The detector is perpendicular to the direction of flight of the spacecraft and acquires one image at a time<br>
+<strong>Data collection</strong>: Measure all pixels in a row of images at the same time<br>
+Example:Spot and Orbview</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="week3data/push_broom.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">push broom. Source:(https://www.l3harrisgeospatial.com/Learn/Blogs/Blog-Details/ArtMID/10198/ArticleID/16262/Push-Broom-and-Whisk-Broom-Sensors)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
 <ul>
 <li>Whisk broom</li>
 </ul>
-<p>Collection method:The detector collects the field of view scanned by the detector as the direction of the rotating mirror changes Data collection:Acquisition of images in a wide range of narrow spectral bands from the visible to mid-infrared spectrum Example:Landsat</p>
+<p><strong>Collection method</strong>: The detector collects the field of view scanned by the detector as the direction of the rotating mirror changes<br>
+<strong>Data collection</strong>: Acquisition of images in a wide range of narrow spectral bands from the visible to mid-infrared spectrum<br>
+Example:Landsat</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="week3data/Whisk_broom.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Whisk broom. Source:(https://www.l3harrisgeospatial.com/Learn/Blogs/Blog-Details/ArtMID/10198/ArticleID/16262/Push-Broom-and-Whisk-Broom-Sensors)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
 <ul>
 <li>Compare</li>
 </ul>
@@ -249,7 +268,26 @@ ul.task-list li input[type="checkbox"] {
 <li><p>resample to populate new output grid</p></li>
 </ul>
 <p><strong>RMSE</strong></p>
-<p>the model with the lowest RMSE will fit best—-always set the value is RMSE</p>
+<p>The model with the lowest RMSE will fit best—-always set the value is RMSE<br>
+</p>
+<p>In order to reduce the PMSE, we need to re-sample the final raster.</p>
+<p><strong>Resample methods</strong></p>
+<ul>
+<li>Nearest Neighbor</li>
+<li>Linear</li>
+<li>Cubic</li>
+<li>Cubic spline</li>
+</ul>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="week3data/re-sample.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">re-sample. Source:(https://andrewmaclachlan.github.io/CASA0023-lecture-3/?panelset3=dn2&amp;panelset4=ratio2&amp;panelset5=pca2#23)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="atmospheric-correction" class="level4" data-number="3.1.2.2">
 <h4 data-number="3.1.2.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">3.1.2.2</span> Atmospheric correction</h4>
@@ -263,7 +301,10 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Relative</li>
 </ul>
-<p>Normalize intensities of different bands within a single image and normalize intensities of bands from many dates to one date + Absolute</p>
+<p>Normalize intensities of different bands within a single image and normalize intensities of bands from many dates to one date</p>
+<ul>
+<li>Absolute</li>
+</ul>
 <p>use the atmospheric radiative transfer models to change digital brightness values into scaled reflectance and then compare these scaled surface reflectance values across the planet.</p>
 <p>data requirements–an atmopsheric model, local atmopsheric visibility, Image altitude</p>
 </section>
@@ -293,10 +334,59 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="application" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="application"><span class="header-section-number">3.2</span> Application</h2>
-<p>It is important to apply the atmospheric correction to the remote sensing of coastal waters. The atmospheric correction process is applied to remove the effects of the atmosphere that contribute to the signal measured by a satellite sensor. The objective of this process is the discrimination, from top-of-atmosphere radiance, of the signal emerging from the sea carrying information on the materials suspended and dissolved in seawater. The atmospheric correction of coastal data is challenged by the presence of continental aerosols, bottom reflectance, and adjacency of land.</p>
+<p><strong>Multispectral UAS Data Accuracy for Different Radiometric Calibration Methods </strong> The performance of five radiometric calibration methods commonly used was investigated in this study. Multispectral imagery was collected using a Parrot Sequoia camera. Unmanned aircraft systems (UAS) allow us to collect aerial data at high spatial and temporal resolution in this study. And radiometric calibration is an essential step of UAS data processing, mainly when imagery is acquired for the analysis of biophysical processes, to monitor a study area over time, and to compare different sensors .The five methods are one-point calibration (method A), one-point calibration plus sunshine sensor (method B), pre-calibration using the simplified empirical line calibration (method C) , one-point calibration plus sunshine sensor plus post-calibration(method D), and post-calibration using the simplified empirical line calibration (method E). The paper found there are no method that can have the best performance in every band.</p>
+<p>Through comparing the five methods, there are the RmsE values.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="week3data/01.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Root-mean-square error (RMSE) values</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Through the RMSE values for each calibration method, the author found the following results. Data accuracy varied between the multispectral bands (Figure 7). For methods B and E, pixel reflectance values were more accurate in the red-edge and NIR band than in the green and red bands. For method D, pixel reflectance values were more accurate in the NIR and red-edge bands than in the green and red bands. Maximum differences between bands were observed for methods B and D. Minimum differences were observed for method E, closely followed by method C.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="week3data/02.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Distribution of root-mean-square error (RMSE) values for each calibration method</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>On average, method D minimized error across bands and grey values closely followed by method E. Method D resulted in better data accuracy than method B, and results indicated that data quality provided by the manufacturer-recommended calibration could be further improved with an empirical calibration. Method E resulted in better data accuracy than method C, and results showed that calibrating the processed uncalibrated rasters would be preferable to calibrating the raw images before data processing. Method A provided lower data accuracy than the other four methods in the green, red, and red-edge bands. Method A failed to calibrate acquired imagery in the NIR band. The result is that there are no method that can have the best performance in every band.<br>
+</p>
+<p><strong>Multispectral UAS Data Accuracy for Different Radiometric Calibration Methods </strong></p>
+<p>What’s more, about the geometric connection,this paper shows the geometric correction process done in the Coimbatore imagery to improve the quality and it shows the process of distortion removed .Finally they get the georectified image using ERDAS(Baboo and Devi, 2011).</p>
+<p>A geometric correction of the image is required whenever the image is to be compared with existing maps or with other images. The goal of image rectification is to facilitate the overlay of additional imagery and other geographic data sets. A standard map area, with boundaries set in UTM, is established for each scene, thus all image files for the same region, once rectified, will occupy the same map area.Once the raw remote sensing digital data has been acquired, it is then processed into usable information.Processing digital data involves changing the data to correct for certain types of distortions. Whenever data is changed to correct for one type of distortion, the possibility of the creating another type of distortion exists. There is an example to show the importance on the pre-processing.Because the Coordinates not in British National Grid coordinates.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="week3data/03.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Geometrically not corrected Coimbatore Imagery</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The below Figure explain the image to map geocorrection and we can see the ground control point spread all over the map.Right side of the image is study area of the Coimbatore toposheets.Adding GCP from a map is easy and straightforward. However, care should be taken when choosing the correct position of a GCP, as a scanned map might add to the RMS error, because roads tend to be drawn wider than they actually are, or even slightly displaced, i.e.University Road is said to be approximately 30m wide. In addition, the pixel size of the map is 3m; the image itself operates with 30m, which is another source of error in correct placement of GCP.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="week3data/04.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Geocorrection using Coimbatore imagery and Coimbatore Toposheet</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="reflection" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
+<p>In this week’s study, I learnt about remote scanners and calibration, among other things. Before using remote sensing data, we have to carry out data pre-processing, such as atmospheric correction, to eliminate the influence of atmospheric medium on the brightness value of remote sensing images, so that the remote sensing images reflect the real surface reflectance of the features, which can provide the basic data for the subsequent extraction and application of remote sensing information. What’s more, geometric correction of remote sensing is a fundamental step in remote sensing image processing and an important link in the application of remote sensing technology. Through geometric correction, accurate correspondence can be established between remote sensing images in terms of spatial position and actual ground position, providing basic data for remote sensing information extraction and application.</p>
 
 
 </section>

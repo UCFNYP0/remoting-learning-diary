@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning Diary for CASA0023 - 6&nbsp; week6</title>
+<title>Learning Diary for CASA0023 - 6&nbsp; Classification</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -100,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week6</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -145,12 +208,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week5</span></a>
+  <a href="./week5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week6.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week6</span></a>
+  <a href="./week6.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -160,12 +223,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week8</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="./week8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Urban Heated Island</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -178,14 +236,25 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">6.1</span>  Summary</a>
+  <ul class="collapse">
+  <li><a href="#cart" id="toc-cart" class="nav-link" data-scroll-target="#cart"><span class="toc-section-number">6.1.1</span>  CART</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">6.1.2</span>  Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">6.1.3</span>  Reflection</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/UCFNYP0/remoting-learning-diary/edit/main/week6.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/UCFNYP0/remoting-learning-diary/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week6</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></h1>
 </div>
 
 
@@ -200,8 +269,369 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="summary" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
+<p>This study is an introduction to CART and its application to remote sensing to solve real urban problems. In practice, I use a supervised learning approach to extract eo data to classify land cover and make a first working task for subsequent analysis such as illegal logging.</p>
+<section id="cart" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="cart"><span class="header-section-number">6.1.1</span> CART</h3>
+<p>CART is a predictive algorithm used in Machine learning and it explains how the target variable’s values can be predicted based on other matters. It is a decision tree where each fork is split into a predictor variable and each node has a prediction for the target variable at the end.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK6DATA/machine learning.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">logic of the machine learning. Source:(https://www.geeksforgeeks.org/ml-types-learning-supervised-learning/?ref=rp)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Following process</strong></p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK6DATA/CART.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">CART Processing</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>The best split point of each input is obtained.<br>
+</li>
+<li>Based on the best split points of each input in Step 1, the new “best” split point is identified.<br>
+</li>
+<li>Split the chosen input according to the “best” split point.<br>
+</li>
+<li>Continue splitting until no further desirable splitting is available.</li>
+</ul>
+<section id="cart-algorithm" class="level4" data-number="6.1.1.1">
+<h4 data-number="6.1.1.1" class="anchored" data-anchor-id="cart-algorithm"><span class="header-section-number">6.1.1.1</span> CART Algorithm</h4>
+<p>CART algorithm uses <strong>Gini Impurity</strong> to split the dataset into a decision tree .It does that by searching for the best homogeneity for the sub nodes, with the help of the Gini index criterion.<br>
+</p>
+<p>This is the prototype formula.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK6DATA/gini.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Gini</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The degree of the Gini index varies from 0 to 1.<br>
+</p>
+<p><strong>Gini=0</strong>, all the elements are allied to a certain class, or only one class exists there<br>
+<strong>Gini=1</strong>, all the elements are randomly distributed across various classes<br>
+<strong>Gini=0.5</strong>, the elements are uniformly distributed into some classes.<br>
+</p>
+<p>In the example “Does someone who loves popcorn or soda love the song cool as ice?”- explained in the lesson, when there is no clear yes or no outcome, then the probabilities of the two choices are calculated and the probabilities of yes and no are brought into the Gini index formula, and if the Gini index is less than 0.5, then it is classified as “yes”.</p>
+<ul>
+<li>Restriction</li>
+</ul>
+<p>Because it provides outcomes either “successful” or “failure” and hence conducts binary splitting only and works on <strong>categorical variables</strong>.</p>
+</section>
+<section id="cart-types" class="level4" data-number="6.1.1.2">
+<h4 data-number="6.1.1.2" class="anchored" data-anchor-id="cart-types"><span class="header-section-number">6.1.1.2</span> CART Types</h4>
+<section id="classification-tree" class="level5" data-number="6.1.1.2.1">
+<h5 data-number="6.1.1.2.1" class="anchored" data-anchor-id="classification-tree"><span class="header-section-number">6.1.1.2.1</span> Classification tree</h5>
+<p>The target variable of the classification tree is categorical. Classification trees are used when the dataset needs to be split into classes that belong to the response variable(like yes or no).<br>
+</p>
+<p>I learned about this is a classification example when filtering emails “spam” or “not spam”, when looking at transaction data, “fraudulent”, or “authorized”.</p>
+</section>
+<section id="regression-tree" class="level5" data-number="6.1.1.2.2">
+<h5 data-number="6.1.1.2.2" class="anchored" data-anchor-id="regression-tree"><span class="header-section-number">6.1.1.2.2</span> Regression tree</h5>
+<p>The target variable is continuous and the tree is used to predict its value. Regression trees are used when the response variable is <strong>continuous</strong>.<br>
+For example, we can predict future house prices based on the existing house price dataset.<br>
+</p>
+<p>I learned about a case study for analysing the performance of the computer.Here are four attributes relating to main memory: cycle time (MYCT), minimum memory (MMIN), maximum memory (MMAX) and cache (CACH); there are also two attributes relating to channels: minimum channels (CHMIN) and maximum channels (CHMAX). Finally, there is the target: relative performance (PRP).</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK6DATA/RegressionTrees.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Example of regression tree</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The importance of attributes with respect to predicting the target is reflected in the level at which they are tested within the tree. Therefore, the most predictive attribute is the MMAX in this case.</p>
+</section>
+<section id="difference-between-the-decision-and-regression-tree" class="level5" data-number="6.1.1.2.3">
+<h5 data-number="6.1.1.2.3" class="anchored" data-anchor-id="difference-between-the-decision-and-regression-tree"><span class="header-section-number">6.1.1.2.3</span> Difference between the decision and regression tree</h5>
+<table class="table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 41%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Decision Tree</th>
+<th style="text-align: left;">Regression Tree</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Dataset selected</td>
+<td style="text-align: left;">Either uncontinous or continous data</td>
+<td style="text-align: left;">must be continous data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">How to divide the tree</td>
+<td style="text-align: left;">Find segments with a strong majority of a discrete class label</td>
+<td style="text-align: left;">Employ splitting metrics based on variance reduction</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Goal</td>
+<td style="text-align: left;">Classification</td>
+<td style="text-align: left;">Predicting the value</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="cart-assessment" class="level4" data-number="6.1.1.3">
+<h4 data-number="6.1.1.3" class="anchored" data-anchor-id="cart-assessment"><span class="header-section-number">6.1.1.3</span> CART Assessment</h4>
+<p><strong>1.Advantages of CART</strong></p>
+<p>Results are simplistic.<br>
+</p>
+<p>Classification and regression trees are Nonparametric and Nonlinear.<br>
+</p>
+<p>Outliers have no meaningful effect on CART.<br>
+</p>
+<p><strong>2.Limitations of CART</strong></p>
+<ul>
+<li>Overfitting<br>
+</li>
+</ul>
+<p>Overfitting occurs when the tree takes into account a lot of noise that exists in the data and comes up with an inaccurate result.<br>
+</p>
+<ul>
+<li>High Variance<br>
+</li>
+</ul>
+<p>a small variance in the data can lead to a very high variance in the prediction, thereby affecting the stability of the outcome.<br>
+</p>
+<ul>
+<li>low bias<br>
+</li>
+</ul>
+<p>A decision tree that is very complex usually has a low bias. This makes it very difficult for the model to incorporate any new data.<br>
+</p>
+<p><strong>How to tackle the overfitting of the desicion tree?</strong></p>
+<p><strong>reason</strong>:the model will correctly classify each and every example if we don’t stop splitting! The training accuracy is 100%<br>
+</p>
+<p><strong>resolution</strong>: + Pruning<br>
+</p>
+<p>It is a technique to remove the parts of the decision tree to prevent growing to its full depth.</p>
+<ul>
+<li>Radom Forest<br>
+</li>
+</ul>
+<p>It is a technique for classification and regression by bootstrapping multiple decision trees to prevent overfitting and the random forest can improve the accuracy of the decision tree.<br>
+</p>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/J4Wdy0Wc_xQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>Through watching the vedio, I learned about the approach of the random forest.<br>
+</p>
+<p>1.Create a bootstrapped dataset&nbsp;</p>
+<p>2.Creat a decision tree using the bootstrapped dataset, but only use a random subset of variabled at each step<br>
+</p>
+<p>3.Go back to the step 1 and repeat and will construt a wide variety of trees. The random forest is construted<br>
+</p>
+<p>4.The new data will be input. And the variables will be run down every decision tree,and we can keep track the more votes that is the result of the random forest.</p>
+</section>
+<section id="gee-practical" class="level4" data-number="6.1.1.4">
+<h4 data-number="6.1.1.4" class="anchored" data-anchor-id="gee-practical"><span class="header-section-number">6.1.1.4</span> GEE Practical</h4>
+<p>I choose Qinhuangdao city, my hometown, as the study area. After loading the EO data and pre-processing, I choose classify the landcover into water,urban,grass,farm and forest, and make a featurecolection.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">// Make a FeatureCollection from the polygons</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> polygons <span class="op">=</span> ee<span class="op">.</span><span class="fu">FeatureCollection</span>([</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  ee<span class="op">.</span><span class="fu">Feature</span>(water<span class="op">,</span> {<span class="st">'class'</span><span class="op">:</span> <span class="dv">1</span>})<span class="op">,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  ee<span class="op">.</span><span class="fu">Feature</span>(urban<span class="op">,</span> {<span class="st">'class'</span><span class="op">:</span> <span class="dv">2</span>})<span class="op">,</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  ee<span class="op">.</span><span class="fu">Feature</span>(grass<span class="op">,</span> {<span class="st">'class'</span><span class="op">:</span> <span class="dv">3</span>})<span class="op">,</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  ee<span class="op">.</span><span class="fu">Feature</span>(farm<span class="op">,</span> {<span class="st">'class'</span><span class="op">:</span> <span class="dv">4</span>})<span class="op">,</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  ee<span class="op">.</span><span class="fu">Feature</span>(forest<span class="op">,</span> {<span class="st">'class'</span><span class="op">:</span> <span class="dv">5</span>})<span class="op">,</span>])<span class="op">;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">// Use these bands for classification.</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> bands <span class="op">=</span> [<span class="st">'B2'</span><span class="op">,</span> <span class="st">'B3'</span><span class="op">,</span> <span class="st">'B4'</span><span class="op">,</span> <span class="st">'B5'</span><span class="op">,</span> <span class="st">'B6'</span><span class="op">,</span> <span class="st">'B7'</span>]<span class="op">;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> classProperty <span class="op">=</span> <span class="st">'class'</span><span class="op">;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">// Sample the composite to generate training data.</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> training <span class="op">=</span> waytwo_clip<span class="op">.</span><span class="fu">select</span>(bands)<span class="op">.</span><span class="fu">sampleRegions</span>({</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="dt">collection</span><span class="op">:</span> polygons<span class="op">,</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="dt">properties</span><span class="op">:</span> [classProperty]<span class="op">,</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="dt">scale</span><span class="op">:</span> <span class="dv">10</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(training<span class="op">,</span> <span class="st">"training"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>And I use the CART to classify the image. But it is the basic methods which doesn’t a good accuracy.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Train a CART classifier.</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> classifier <span class="op">=</span> ee<span class="op">.</span><span class="at">Classifier</span><span class="op">.</span><span class="fu">smileCart</span>()<span class="op">.</span><span class="fu">train</span>({</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">features</span><span class="op">:</span> training<span class="op">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">classProperty</span><span class="op">:</span> classProperty<span class="op">,</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">// Print some info about the classifier (specific to CART).</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'CART, explained'</span><span class="op">,</span> classifier<span class="op">.</span><span class="fu">explain</span>())<span class="op">;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">// Classify the image.</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> classified <span class="op">=</span> waytwo_clip<span class="op">.</span><span class="fu">classify</span>(classifier)<span class="op">;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">centerObject</span>(qinhuangdao)<span class="op">;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(classified<span class="op">,</span> {<span class="dt">min</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">max</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">palette</span><span class="op">:</span> [<span class="st">'d99282'</span><span class="op">,</span> <span class="st">'466b9f'</span><span class="op">,</span> <span class="st">'ab0000'</span><span class="op">,</span> <span class="st">'dfdfc2'</span><span class="op">,</span> <span class="st">'b3ac9f'</span><span class="op">,</span> <span class="st">'1c5f2c'</span>]}<span class="op">,</span> <span class="st">"classified"</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK6DATA/CART1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">IMAGE BY CART IN QINHUANGDAO</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>In order to improve the accuracy of the image, I used the random forest to classification using the picel approach .</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> pixel_number<span class="op">=</span> <span class="dv">1000</span><span class="op">;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> water_points<span class="op">=</span>ee<span class="op">.</span><span class="at">FeatureCollection</span><span class="op">.</span><span class="fu">randomPoints</span>(water<span class="op">,</span> pixel_number)<span class="op">.</span><span class="fu">map</span>(<span class="kw">function</span>(i){</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> i<span class="op">.</span><span class="fu">set</span>({<span class="st">'class'</span><span class="op">:</span> <span class="dv">1</span>})})</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> urban_points<span class="op">=</span>ee<span class="op">.</span><span class="at">FeatureCollection</span><span class="op">.</span><span class="fu">randomPoints</span>(urban<span class="op">,</span> pixel_number)<span class="op">.</span><span class="fu">map</span>(<span class="kw">function</span>(i){</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> i<span class="op">.</span><span class="fu">set</span>({<span class="st">'class'</span><span class="op">:</span> <span class="dv">2</span>})})</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> grass_points<span class="op">=</span>ee<span class="op">.</span><span class="at">FeatureCollection</span><span class="op">.</span><span class="fu">randomPoints</span>(grass<span class="op">,</span> pixel_number)<span class="op">.</span><span class="fu">map</span>(<span class="kw">function</span>(i){</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> i<span class="op">.</span><span class="fu">set</span>({<span class="st">'class'</span><span class="op">:</span> <span class="dv">3</span>})})</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> farm_points<span class="op">=</span>ee<span class="op">.</span><span class="at">FeatureCollection</span><span class="op">.</span><span class="fu">randomPoints</span>(farm<span class="op">,</span> pixel_number)<span class="op">.</span><span class="fu">map</span>(<span class="kw">function</span>(i){</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> i<span class="op">.</span><span class="fu">set</span>({<span class="st">'class'</span><span class="op">:</span> <span class="dv">4</span>})})</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> forest_points<span class="op">=</span>ee<span class="op">.</span><span class="at">FeatureCollection</span><span class="op">.</span><span class="fu">randomPoints</span>(forest<span class="op">,</span> pixel_number)<span class="op">.</span><span class="fu">map</span>(<span class="kw">function</span>(i){</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> i<span class="op">.</span><span class="fu">set</span>({<span class="st">'class'</span><span class="op">:</span> <span class="dv">5</span>})})</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> point_sample<span class="op">=</span>ee<span class="op">.</span><span class="fu">FeatureCollection</span>([water_points<span class="op">,</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>                                  urban_points<span class="op">,</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>                                  grass_points<span class="op">,</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>                                  farm_points<span class="op">,</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>                                  forest_points])</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>                                  <span class="op">.</span><span class="fu">flatten</span>()</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>                                  <span class="op">.</span><span class="fu">randomColumn</span>()<span class="op">;</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co">// assign 70% of training points to validation </span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> split<span class="op">=</span><span class="fl">0.7</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> training_sample <span class="op">=</span> point_sample<span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">lt</span>(<span class="st">'random'</span><span class="op">,</span> split))<span class="op">;</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> validation_sample <span class="op">=</span> point_sample<span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">gte</span>(<span class="st">'random'</span><span class="op">,</span> split))<span class="op">;</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="co">// take samples from image for training and validation  </span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> training <span class="op">=</span> waytwo_clip<span class="op">.</span><span class="fu">select</span>(bands)<span class="op">.</span><span class="fu">sampleRegions</span>({</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>  <span class="dt">collection</span><span class="op">:</span> training_sample<span class="op">,</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>  <span class="dt">properties</span><span class="op">:</span> [<span class="st">'class'</span>]<span class="op">,</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>  <span class="dt">scale</span><span class="op">:</span> <span class="dv">10</span><span class="op">,</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> validation <span class="op">=</span> waytwo_clip<span class="op">.</span><span class="fu">select</span>(bands)<span class="op">.</span><span class="fu">sampleRegions</span>({</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>  <span class="dt">collection</span><span class="op">:</span> validation_sample<span class="op">,</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>  <span class="dt">properties</span><span class="op">:</span> [<span class="st">'class'</span>]<span class="op">,</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>  <span class="dt">scale</span><span class="op">:</span> <span class="dv">10</span></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="co">// Random Forest Classification</span></span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> rf1_pixel <span class="op">=</span> ee<span class="op">.</span><span class="at">Classifier</span><span class="op">.</span><span class="fu">smileRandomForest</span>(<span class="dv">100</span>)</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">train</span>(training<span class="op">,</span> <span class="st">'class'</span>)<span class="op">;</span></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Results of RF trained classifier'</span><span class="op">,</span> rf1_pixel<span class="op">.</span><span class="fu">explain</span>())<span class="op">;</span></span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a><span class="co">//  Conduct classification</span></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> rf2_pixel <span class="op">=</span> waytwo_clip<span class="op">.</span><span class="fu">classify</span>(rf1_pixel)<span class="op">;</span></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(rf2_pixel<span class="op">,</span> {<span class="dt">min</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">max</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> </span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>  <span class="dt">palette</span><span class="op">:</span> [<span class="st">'d99282'</span><span class="op">,</span> <span class="st">'466b9f'</span><span class="op">,</span> <span class="st">'ab0000'</span><span class="op">,</span> <span class="st">'dfdfc2'</span><span class="op">,</span> <span class="st">'b3ac9f'</span><span class="op">,</span> <span class="st">'1c5f2c'</span>]}<span class="op">,</span></span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>  <span class="st">"RF_pixel"</span>)<span class="op">;</span></span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a><span class="co">// Assess Accuracy </span></span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> trainAccuracy <span class="op">=</span> rf1_pixel<span class="op">.</span><span class="fu">confusionMatrix</span>()<span class="op">;</span></span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Resubstitution error matrix: '</span><span class="op">,</span> trainAccuracy)<span class="op">;</span></span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Training overall accuracy: '</span><span class="op">,</span> trainAccuracy<span class="op">.</span><span class="fu">accuracy</span>())<span class="op">;</span></span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> validated <span class="op">=</span> validation<span class="op">.</span><span class="fu">classify</span>(rf1_pixel)<span class="op">;</span></span>
+<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> testAccuracy <span class="op">=</span> validated<span class="op">.</span><span class="fu">errorMatrix</span>(<span class="st">'class'</span><span class="op">,</span> <span class="st">'classification'</span>)<span class="op">;</span></span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> consumers<span class="op">=</span>testAccuracy<span class="op">.</span><span class="fu">consumersAccuracy</span>()</span>
+<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Validation error matrix: '</span><span class="op">,</span> testAccuracy)<span class="op">;</span></span>
+<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Validation overall accuracy: '</span><span class="op">,</span> testAccuracy<span class="op">.</span><span class="fu">accuracy</span>())</span>
+<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Validation consumer accuracy: '</span><span class="op">,</span> consumers)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK6DATA/random.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">IMAGE BY RANDOM FOREST IN QINHUANGDAO</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>through both image comparing, I find that the accurancy of classification is improved. Because of observing the urban landcover in the image using the random forest, the urban area locates mainly in coastal areas and urban center.<br>
+</p>
+<p>However, this practical has some limitation.I should classify the landcover more clearly, for emaple, the urban with low density, urban with high density, and moutain etc.</p>
+</section>
+</section>
+<section id="application" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.1.2</span> Application</h3>
+<p><strong>Forest cover change and illegal logging in the Ukrainian Carpathians from 1988 to 2007</strong></p>
+<p>This paper focuses that the authors’ use Landsat TM/ETM+ imagery and support vector machines (SVM) to derive forest change trajectories across the Ukrainian Carpathians between 1988 and 2007. By mapping forest cover changes and assessing the extent of illegal logging and reforestation in the Ukrainian Carpathians. As a result of the study, the authors found that a general change in forest cover occurred in the Ukrainian Carpathians between 1988 and 2007, mainly in the form of forest decline in the interior of the Carpathians.<br>
+</p>
+<ul>
+<li>Study area: The entire Ukrainian Carpathians<br>
+</li>
+</ul>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK6DATA/baergan1.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">study area</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Data collection</strong><br>
+</li>
+</ul>
+<p>1.EO data:19 mid-summer and early fall Landsat TM and ETM+ images for ∼ 1988, 1994, ∼ 2000, and ∼ 2007. what’s more，to account for relief displacement, we included the Space Shuttle Topography Mission (SRTM) digital elevation model, resampled to 30 m.<br>
+2.Ground truth data were gathered based on approximately 120 Quickbird images from 2002 to 2007 available in Google Earth, which is comparable to that of the Landsat images. 3.Administrative boundaries at the province (oblast) and district (raion) level were digitized from topographic maps at a scale of 1:100,000 .<br>
+</p>
+<ul>
+<li><p><strong>Methodology</strong>: The author used SVM to create forest/non-forest maps for each of the four time periods and assessed forest cover change by comparison of the post-classification maps. After finding the best γ and C, the author classified each of the 19 Landsat TM/ETM+ images according to six multispectral bands. the author divided all available ground truth points into training (90%) and validation (10%) samples. the author classify each image 10 times for all 10 possible segmentations, derive an accuracy metric and then calculate an average error estimate.</p></li>
+<li><p><strong>Output</strong>:Forest cover changed substantially in the Ukrainian Carpathians between 1988 and 2007.What’s more, compared with the official forest resource data at the oblast level,The forest cover trends mapped from Landsat imagery differ markedly. Based on official statistics recorded in the Statistical Yearbook of Ukraine, it was found that the relatively high disturbance rates found in the Lvivska and Chernivetska Oblasts prior to 1994 and the significant increase in disturbance rates in the Ivano-Frankivska Oblast after 1988 were not depicted in the forest resource data.</p></li>
+</ul>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK6DATA/baergan2.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Forest cover changes between 1988 and 2007</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK6DATA/baergan3.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">forest resource statistics at the oblast level</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Comment</strong><br>
+The authors chose svm as the analysis method, which can better handle large-scale datasets and has the ability to handle complex data, making it a better analysis method for monitoring image classification such as illegal logging activities in forest areas. The authors also consider the influence of population activity and DEM on forest monitoring disturbances with rigour. However, in this article, large-scale natural disturbances are not taken into account, such as more frequent storms in the local area, or insect infestations, which can bias the data analysis results to some extent.</p>
+</section>
+<section id="reflection" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.1.3</span> Reflection</h3>
+<p>Through this week, I have learnt about the power of machine learning in the field of remote sensing, especially in land cover classification. And through extra-curricular literature reading and practical application, I realised the wide application of random forests. Firstly, random forests can handle the high-dimensional data contained in remote sensing data, and it has strong stability to avoid the drawbacks of over-fitting simple classification trees.<br>
+</p>
+<p>In addition, in reviewing the data, he found that land cover classification can also be performed by deep learning methods. He trained a deep neural network for classification through a large amount of data. In remote sensing image classification, deep learning can use convolutional neural networks (CNNs) to extract and classify spatial features in images. This is an area that I am not currently exposed to and have developed an interest in myself, so I hope to learn something about it later.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -455,7 +885,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./week5.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week5</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

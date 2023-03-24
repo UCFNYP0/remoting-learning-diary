@@ -6,7 +6,7 @@
 -   **study policy: OneNYC 2050**\
 -   **study topic: urban heated island**
 
-```{r echo=FALSE, out.width = "60%", fig.align='left', cache=FALSE, fig.cap= "OneNYC2050. Source: [OneNYC 2050](https://onenyc.cityofnewyork.us/strategies/a-livable-climate/)"}
+```{r echo=FALSE, out.width = "100%", fig.align='left', cache=FALSE, fig.cap= "OneNYC2050. Source: [OneNYC 2050](https://onenyc.cityofnewyork.us/strategies/a-livable-climate/)"}
 knitr::include_graphics('week4_data/onenyc2050.png')
 ```
 
@@ -25,6 +25,33 @@ The global response to the threat of climate change should be strengthened by ac
 -   Creating a liveable climate, responding positively to the Paris Agreement, taking action on climate change, especially for the most vulnerable communities, and upholding climate justice
 -   Commit to a just transition to carbon neutrality, climate resilience and a clean economy to improve environmental quality for all and redressing injustices
 -   Invest in infrastructure that mitigates climate risks, such as vegetation planting Forge partnerships on climate solutions across communities, sectors and regions to share the benefits
+
+**Case:Shi Jiazhuang**
+
+This study was carried out using Landsat TM images at the mesoscale level and airborne hyperspectral thermal imagery at the microscale level. Surface temperatures (LST) were inferred from four scenes of summer Landsat TM data to analyse the thermal spatial pattern and intensity of the surface UHI (SUHI). And to describe more detailed urban thermal characteristics of the center of Shijiazhuang from TASI data.\
+The authors obtained the impervious variable area from EO data,and in order to investigate the intrinsic relationship between impervious density distribution and urban thermal patterns, classified the urban landscape into different categories based on impervious density. And to obtain the surface temperature. And to obtain land surface cover patterns using SVM machine learning methods using Landsat and TASI.\
+By comparing the two maps of land cover type and surface temperature, it was found that there is a strong relationship between impervious land cover and high surface temperature.\
+
+```{r echo=FALSE, out.width='70%', fig.align='left', fig.cap= "  percent impervious surface area distribution"}
+knitr::include_graphics('week4_data/shijiazhuang1.WEBP')
+```
+
+```{r echo=FALSE, out.width='70%', fig.align='left', fig.cap= " LST distribution"}
+knitr::include_graphics('week4_data/shijiazhuang2.WEBP')
+```
+
+And in order to study the relationship between urban spatial pattern and thermal radiation at microscopic scale, the land cover types ambient concrete built-up area, water body, bare soil, vegetation, and mixed asphalt were used to represent different spatial attributes.
+
+```{r echo=FALSE, out.width='70%', fig.align='left', fig.cap= " LCTs map in the center"}
+knitr::include_graphics('week4_data/shijiazhuang.WEBP')
+```
+
+Concerning the time phase of early morning, the temperature differences among various urban covers were smaller compared to other periods of time (noon and evening). Most land cover had a relatively similar thermal response at this time, and their surface temperature differences were minimal. For the noon and evening, as can be clearly seen, the most important surface components contributing heat to urban areas were rooftops, asphalt, and concrete which have lower thermal inertia. Contrary to the morning, water and vegetation area had lower temperatures during the noon. When it came to the evening, the temperature of impervious surface and bare soil was still higher than other cover types due to significantly different thermal bulk properties.\
+What's more, this study suggests that careful consideration is required for land use planning, particularly in urban--suburb areas where a widespread change in LCTs can significantly impact thermal responses. Urban planners attempting to mitigate the negative impact of urban sprawl on urban heat island should give serious consideration to both the area percentage of various land-cover types and their spatial distribution as well.
+
+**Comment**
+
+This paper uses analysis of the suhi effect by analysing the effect of land cover type on surface temperature, and uses multi-temporal airborne thermal imagery to analyse detailed urban thermal characteristics of urban centres. In terms of data set acquisition, landsat is useful for studying the suhi effect at the mesoscopic scale, but it is not clear which specific surfaces contribute to the extent of the heat island effect. For high-resolution satellite data, further acquisition is needed by means of high-resolution data acquisition to delve into the urban heat island problem in Shijiazhuang.
 
 ## Application
 
@@ -45,11 +72,11 @@ Finally, the former statistics are stored as new attributes in the Urban Atlas p
 
 -   **Output**
 
-```{r echo=FALSE, out.width = "60%", fig.align='left', fig.cap= "Geopackage. Source: [Methodology and Deliverables Report_LONDON_ARTi](https://airdrive-secure.s3-eu-west-1.amazonaws.com/london/dataset/major-summer-heatspots-using-landsat-8-thermal-satellite-data/2021-03-17T17%3A25%3A49/Methodology%20and%20Deliverables%20Report_LONDON_ARTi.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJJDIMAIVZJDICKHA%2F20230317%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20230317T213731Z&X-Amz-Expires=300&X-Amz-Signature=1bbf57ee50c4c58ca33366d8d5d492a894efe46b3d1eecffc2d24b19dff6ca44&X-Amz-SignedHeaders=host)"}
+```{r echo=FALSE, out.width = "100%", fig.align='left', fig.cap= "Geopackage. Source: [Methodology and Deliverables Report_LONDON_ARTi](https://airdrive-secure.s3-eu-west-1.amazonaws.com/london/dataset/major-summer-heatspots-using-landsat-8-thermal-satellite-data/2021-03-17T17%3A25%3A49/Methodology%20and%20Deliverables%20Report_LONDON_ARTi.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJJDIMAIVZJDICKHA%2F20230317%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20230317T213731Z&X-Amz-Expires=300&X-Amz-Signature=1bbf57ee50c4c58ca33366d8d5d492a894efe46b3d1eecffc2d24b19dff6ca44&X-Amz-SignedHeaders=host)"}
 knitr::include_graphics('week4_data/OUTPUT1.png')
 ```
 
-```{r echo=FALSE, out.width = "60%", fig.align='left', fig.cap= "Geopackage. Source: [Methodology and Deliverables Report_LONDON_ARTi](https://data.london.gov.uk/dataset/major-summer-heatspots-using-landsat-8-thermal-satellite-data)"}
+```{r echo=FALSE, out.width = "100%", fig.align='left', fig.cap= "Geopackage. Source: [Methodology and Deliverables Report_LONDON_ARTi](https://data.london.gov.uk/dataset/major-summer-heatspots-using-landsat-8-thermal-satellite-data)"}
 knitr::include_graphics('week4_data/OUTPUT2.png')
 ```
 
@@ -63,7 +90,7 @@ Heat exposure was estimated using the urban heat risk index (UHRI), a composite 
 
 LST is the land surface temperature, which is calculated from the Landsat data. NDBI was assessed by calculating the NDVI (normalized difference vegetation index). The UHRI thus takes all three into account as an indication of the spatial extent and intensity of the urban heat island.
 
-```{r echo=FALSE, out.width = "60%", fig.align='left', fig.cap= "UHRI & NDVI. Source: [Social Inequities in Urban Heat and Greenspace: Analyzing Climate Justice in Delhi,India](https://www.mdpi.com/1660-4601/18/9/4800)"}
+```{r echo=FALSE, out.width = "100%", fig.align='left', fig.cap= "UHRI & NDVI. Source: [Social Inequities in Urban Heat and Greenspace: Analyzing Climate Justice in Delhi,India](https://www.mdpi.com/1660-4601/18/9/4800)"}
 knitr::include_graphics('week4_data/URHI.png')
 ```
 
@@ -77,11 +104,11 @@ knitr::include_graphics('week4_data/URHI.png')
 
 -   **the output**
 
-```{r echo=FALSE, out.width = "60%", fig.align='left', fig.cap= "Generalized estimating equation for predicting May UHRI using ward level socio-demographic variables. Source: [Social Inequities in Urban Heat and Greenspace: Analyzing Climate Justice in Delhi,India](https://www.mdpi.com/1660-4601/18/9/4800)"}
+```{r echo=FALSE, out.width = "100%", fig.align='left', fig.cap= "Generalized estimating equation for predicting May UHRI using ward level socio-demographic variables. Source: [Social Inequities in Urban Heat and Greenspace: Analyzing Climate Justice in Delhi,India](https://www.mdpi.com/1660-4601/18/9/4800)"}
 knitr::include_graphics('week4_data/urhi2.png')
 ```
 
-The UHRI is significantly positively associated with the proportion of children, SC, agricultural workers, households with assets and households with electricity (p \< 0.01), but negatively associated (p \< 0.005) with the proportion of educated residents, households that own a home and larger households.\
+The UHRI is significantly positively associated with the proportion of children, SC, agricultural workers, households with assets and households with electricity (p \< 0.01), but negatively associated (p \< 0.005) with the proportion of educated residents, households that own a home and larger households[@liu2015a].\
 
 Through correlation analysis and spatial visualisation of areas with high heat exposure indices, government funding for social vulnerability related factors such as households with severe poverty and electricity, schools, in addition to focusing not only on the heat island environment in the central city, it was shown through the strong correlation between agricultural labour and NDVI that the government should also focus on the population in the urban periphery. The correlation study aims to make a valuable contribution to the integration of climate justice considerations into climate change planning in Delhi by demonstrating which vulnerable groups should be prioritised in the policy if the urban heated island.
 

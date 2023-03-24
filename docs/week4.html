@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -145,27 +164,22 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week5</span></a>
+  <a href="./week5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week6</span></a>
+  <a href="./week6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week7.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week7</span></a>
+  <a href="./week7.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classificaiton 2</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week8</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="./week8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Urban Heated Island</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -229,7 +243,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="week4_data/onenyc2050.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="week4_data/onenyc2050.png" class="img-fluid figure-img" style="width:100.0%"></p>
 <p></p><figcaption class="figure-caption">OneNYC2050. Source: <a href="https://onenyc.cityofnewyork.us/strategies/a-livable-climate/">OneNYC 2050</a></figcaption><p></p>
 </figure>
 </div>
@@ -249,6 +263,46 @@ ul.task-list li input[type="checkbox"] {
 <li>Commit to a just transition to carbon neutrality, climate resilience and a clean economy to improve environmental quality for all and redressing injustices</li>
 <li>Invest in infrastructure that mitigates climate risks, such as vegetation planting Forge partnerships on climate solutions across communities, sectors and regions to share the benefits</li>
 </ul>
+<p><strong>Case:Shi Jiazhuang</strong></p>
+<p>This study was carried out using Landsat TM images at the mesoscale level and airborne hyperspectral thermal imagery at the microscale level. Surface temperatures (LST) were inferred from four scenes of summer Landsat TM data to analyse the thermal spatial pattern and intensity of the surface UHI (SUHI). And to describe more detailed urban thermal characteristics of the center of Shijiazhuang from TASI data.<br>
+The authors obtained the impervious variable area from EO data,and in order to investigate the intrinsic relationship between impervious density distribution and urban thermal patterns, classified the urban landscape into different categories based on impervious density. And to obtain the surface temperature. And to obtain land surface cover patterns using SVM machine learning methods using Landsat and TASI.<br>
+By comparing the two maps of land cover type and surface temperature, it was found that there is a strong relationship between impervious land cover and high surface temperature.<br>
+</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="week4_data/shijiazhuang1.WEBP" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">percent impervious surface area distribution</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="week4_data/shijiazhuang2.WEBP" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">LST distribution</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>And in order to study the relationship between urban spatial pattern and thermal radiation at microscopic scale, the land cover types ambient concrete built-up area, water body, bare soil, vegetation, and mixed asphalt were used to represent different spatial attributes.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="week4_data/shijiazhuang.WEBP" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">LCTs map in the center</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Concerning the time phase of early morning, the temperature differences among various urban covers were smaller compared to other periods of time (noon and evening). Most land cover had a relatively similar thermal response at this time, and their surface temperature differences were minimal. For the noon and evening, as can be clearly seen, the most important surface components contributing heat to urban areas were rooftops, asphalt, and concrete which have lower thermal inertia. Contrary to the morning, water and vegetation area had lower temperatures during the noon. When it came to the evening, the temperature of impervious surface and bare soil was still higher than other cover types due to significantly different thermal bulk properties.<br>
+What’s more, this study suggests that careful consideration is required for land use planning, particularly in urban–suburb areas where a widespread change in LCTs can significantly impact thermal responses. Urban planners attempting to mitigate the negative impact of urban sprawl on urban heat island should give serious consideration to both the area percentage of various land-cover types and their spatial distribution as well.</p>
+<p><strong>Comment</strong></p>
+<p>This paper uses analysis of the suhi effect by analysing the effect of land cover type on surface temperature, and uses multi-temporal airborne thermal imagery to analyse detailed urban thermal characteristics of urban centres. In terms of data set acquisition, landsat is useful for studying the suhi effect at the mesoscopic scale, but it is not clear which specific surfaces contribute to the extent of the heat island effect. For high-resolution satellite data, further acquisition is needed by means of high-resolution data acquisition to delve into the urban heat island problem in Shijiazhuang.</p>
 </section>
 </section>
 <section id="application" class="level2" data-number="4.2">
@@ -274,7 +328,7 @@ Finally, the former statistics are stored as new attributes in the Urban Atlas p
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="week4_data/OUTPUT1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="week4_data/OUTPUT1.png" class="img-fluid figure-img" style="width:100.0%"></p>
 <p></p><figcaption class="figure-caption">Geopackage. Source: <a href="https://airdrive-secure.s3-eu-west-1.amazonaws.com/london/dataset/major-summer-heatspots-using-landsat-8-thermal-satellite-data/2021-03-17T17%3A25%3A49/Methodology%20and%20Deliverables%20Report_LONDON_ARTi.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJJDIMAIVZJDICKHA%2F20230317%2Feu-west-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20230317T213731Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=1bbf57ee50c4c58ca33366d8d5d492a894efe46b3d1eecffc2d24b19dff6ca44&amp;X-Amz-SignedHeaders=host">Methodology and Deliverables Report_LONDON_ARTi</a></figcaption><p></p>
 </figure>
 </div>
@@ -284,7 +338,7 @@ Finally, the former statistics are stored as new attributes in the Urban Atlas p
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="week4_data/OUTPUT2.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="week4_data/OUTPUT2.png" class="img-fluid figure-img" style="width:100.0%"></p>
 <p></p><figcaption class="figure-caption">Geopackage. Source: <a href="https://data.london.gov.uk/dataset/major-summer-heatspots-using-landsat-8-thermal-satellite-data">Methodology and Deliverables Report_LONDON_ARTi</a></figcaption><p></p>
 </figure>
 </div>
@@ -304,7 +358,7 @@ Finally, the former statistics are stored as new attributes in the Urban Atlas p
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="week4_data/URHI.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="week4_data/URHI.png" class="img-fluid figure-img" style="width:100.0%"></p>
 <p></p><figcaption class="figure-caption">UHRI &amp; NDVI. Source: <a href="https://www.mdpi.com/1660-4601/18/9/4800">Social Inequities in Urban Heat and Greenspace: Analyzing Climate Justice in Delhi,India</a></figcaption><p></p>
 </figure>
 </div>
@@ -321,13 +375,13 @@ Finally, the former statistics are stored as new attributes in the Urban Atlas p
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="week4_data/urhi2.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="week4_data/urhi2.png" class="img-fluid figure-img" style="width:100.0%"></p>
 <p></p><figcaption class="figure-caption">Generalized estimating equation for predicting May UHRI using ward level socio-demographic variables. Source: <a href="https://www.mdpi.com/1660-4601/18/9/4800">Social Inequities in Urban Heat and Greenspace: Analyzing Climate Justice in Delhi,India</a></figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
-<p>The UHRI is significantly positively associated with the proportion of children, SC, agricultural workers, households with assets and households with electricity (p &lt; 0.01), but negatively associated (p &lt; 0.005) with the proportion of educated residents, households that own a home and larger households.<br>
+<p>The UHRI is significantly positively associated with the proportion of children, SC, agricultural workers, households with assets and households with electricity (p &lt; 0.01), but negatively associated (p &lt; 0.005) with the proportion of educated residents, households that own a home and larger households<span class="citation" data-cites="liu2015a">(<a href="references.html#ref-liu2015a" role="doc-biblioref">Liu et al. 2015</a>)</span>.<br>
 </p>
 <p>Through correlation analysis and spatial visualisation of areas with high heat exposure indices, government funding for social vulnerability related factors such as households with severe poverty and electricity, schools, in addition to focusing not only on the heat island environment in the central city, it was shown through the strong correlation between agricultural labour and NDVI that the government should also focus on the population in the urban periphery. The correlation study aims to make a valuable contribution to the integration of climate justice considerations into climate change planning in Delhi by demonstrating which vulnerable groups should be prioritised in the policy if the urban heated island.</p>
 </section>
@@ -337,6 +391,11 @@ Finally, the former statistics are stored as new attributes in the Urban Atlas p
 <p>Through the focus on high temperatures in the New York City 2050 plan, I have focused my attention on urban heat island issues, hoping to disentangle and propose specific strategies for 2050 planning goals through remote sensing data analysis, rather than macro planning. An example is the delivery of the UK Hotspot Toolkit. Through the collection of EO data, SUHI data is obtained and spatially visualised to give the government and citizens a clear picture of the hotspots that need to be focused on, providing specific geographical information on the location of the next solutions to the urban heat island problem. The Indian literature, on the other hand, provides possible correlates for addressing climate equity and can assist the government in providing direction for addressing equity issues. However, I believe that the current work is still far from adequate and that workflows need to be proposed for New York to mitigate the urban heat island problem and achieve climate equity, such as how to green the infrastructure and how to conduct urban temperature implementation monitoring.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-liu2015a" class="csl-entry" role="doc-biblioentry">
+Liu, Kai, Hongbo Su, Lifu Zhang, Hang Yang, Renhua Zhang, and Xueke Li. 2015. <span>“Analysis of the Urban Heat Island Effect in Shijiazhuang, China Using Satellite and Airborne Data.”</span> <em>Remote Sensing</em> 7 (4): 4804–33. <a href="https://doi.org/10.3390/rs70404804">https://doi.org/10.3390/rs70404804</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -596,7 +655,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week5.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week5</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

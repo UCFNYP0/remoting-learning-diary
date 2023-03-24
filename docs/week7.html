@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning Diary for CASA0023 - 7&nbsp; week7</title>
+<title>Learning Diary for CASA0023 - 7&nbsp; Classificaiton 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -100,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week7</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classificaiton 2</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -145,27 +145,22 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week5</span></a>
+  <a href="./week5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week6</span></a>
+  <a href="./week6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week7.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week7</span></a>
+  <a href="./week7.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classificaiton 2</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week8</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="./week8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Urban Heated Island</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -178,14 +173,25 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">7.1</span>  Summary</a>
+  <ul class="collapse">
+  <li><a href="#landcover-classification" id="toc-landcover-classification" class="nav-link" data-scroll-target="#landcover-classification"><span class="toc-section-number">7.1.1</span>  Landcover classification</a></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">7.2</span>  Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">7.3</span>  Reflection</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/UCFNYP0/remoting-learning-diary/edit/main/week7.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/UCFNYP0/remoting-learning-diary/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week7</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classificaiton 2</span></h1>
 </div>
 
 
@@ -200,8 +206,196 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="summary" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
+<section id="landcover-classification" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="landcover-classification"><span class="header-section-number">7.1.1</span> Landcover classification</h3>
+<section id="object-based-image-analysis-and-sub-pixel-analysisobia" class="level4" data-number="7.1.1.1">
+<h4 data-number="7.1.1.1" class="anchored" data-anchor-id="object-based-image-analysis-and-sub-pixel-analysisobia"><span class="header-section-number">7.1.1.1</span> Object based image analysis and sub pixel analysis(OBIA)</h4>
+<p>Traditional pixel-based image classification assigns a land cover class per pixel. All pixels are the same size, same shape, and don’t have any concept of their neighbors.<br>
+However, OBIA segments an image grouping small pixels together into vector objects. Instead of a per-pixel basis, segmentation automatically digitizes the image for you.<br>
+</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK7DATA/01.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Use Euclidean distance in SLIC. Source: [Nowosad 2021](https://jakubnowosad.com/ogh2021/#10</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>two basic principles</strong> of OBIA are:<br>
+</p>
+<ul>
+<li><p>SEGMENTATION: Break the image up into objects representing land-based features.<br>
+</p></li>
+<li><p>CLASSIFICATION: Classify those objects using their shape, size, spatial and spectral There are many methods in object-based image analysis. Superpixels consider the similarity of pixels and homogeneity of the pixels, and Simple Linear Iterative Clustering (SLIC) is one of most common method to generate superpixels.<br>
+</p></li>
+</ul>
+<p><strong>Application</strong><br>
+</p>
+<p>1.Medical Imaging<br>
+</p>
+<p>2.Object detection (Face, pedestrian detection)<br>
+</p>
+<p>3.Recognition Tasks (Face, Fingerprint recognition)<br>
+</p>
+<p>4.Video Surveillance]<br>
+</p>
+</section>
+<section id="sub-pixel-analysis" class="level4" data-number="7.1.1.2">
+<h4 data-number="7.1.1.2" class="anchored" data-anchor-id="sub-pixel-analysis"><span class="header-section-number">7.1.1.2</span> Sub-pixel analysis</h4>
+<p>The sub-pixel analysis is a digital image processing technique that achieves subpixel resolution in images. This means that subpixel resolution can be obtained when the information of a picture exceeds its nominal pixel resolution. For example, in an idea, a position is represented as an integer value (x,y) coordinates and a place where a fractional pixel location might be given.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK7DATA/02.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Comparison of true colour high spatial resolution data (a) and Landsat surface reflectance (b) highlighting the spatial detail captured by high-resolution imagery (c) and the same areas as observed by Landsat (d) for the subset East Beechboro used within this study. Source: <a href="https://www.tandfonline.com/doi/pdf/10.1080/01431161.2017.1346403?needAccess=true&amp;">Tandfonline</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="accuracy-assessment" class="level4" data-number="7.1.1.3">
+<h4 data-number="7.1.1.3" class="anchored" data-anchor-id="accuracy-assessment"><span class="header-section-number">7.1.1.3</span> Accuracy assessment</h4>
+<p>In remote sensing we focus on:</p>
+<ul>
+<li><p>PA Producer accuracy (recall or true positive rate or sensitivity)<br>
+</p></li>
+<li><p>UA User’s accuracy (consumer’s accuracy or precision or positive predictive value<br>
+</p></li>
+<li><p>OA the (overall) accuracy</p></li>
+</ul>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK7DATA/03.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Binary confusion matrix . Source: <a href="https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-3/61/2018/isprs-archives-XLII-3-61-2018.pdf">TBarsi et al.&nbsp;2018</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="test-and-training-data" class="level4" data-number="7.1.1.4">
+<h4 data-number="7.1.1.4" class="anchored" data-anchor-id="test-and-training-data"><span class="header-section-number">7.1.1.4</span> Test and training data</h4>
+<p>When we fit the model, there are some approach to fit the model better.<br>
+</p>
+<p><strong>train and test split</strong> The dataset is divided into training and testing sets. The training set is used to train the model, while the test set is used to evaluate the model’s performance. This aims to prevent overfitting, where the model performs well on the training data but not on the new data.</p>
+<p><strong>cross validation</strong><br>
+</p>
+<p>It tests the model’s performance on the other subsets by dividing the dataset into subsets and then training the model on one of the subsets. This process is repeated multiple times, training and testing with a different subgroup each time. Finally, the average of all test results is used to evaluate the model’s performance.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK7DATA/05.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">cross validation. Source: <a href="https://scikit-learn.org/stable/modules/cross_validation.html">scikit-learn</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Spatial cross validation</strong><br>
+</p>
+<p>If there is the patial autocorrelation between training and test sets,we should consider the spatial cross validation.Spatial cross-validation is a method for assessing the performance of spatial prediction models. It is similar to normal cross-validation but takes into account spatial relationships when dividing the dataset. The dataset is divided into subsets in spatial cross-validation, with each subset containing neighbouring observations. The model is then trained on one subset and tested on the performance of the model on the other subsets. This process is repeated several times, each time using a different subset for training and testing.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK7DATA/04.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Illustration of default cross-validation vs.&nbsp;spatial cross-validation. Source: <a href="https://towardsdatascience.com/spatial-cross-validation-using-scikit-learn-74cb8ffe0ab9">Lovelace, et al</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="gee-on-practical" class="level4" data-number="7.1.1.5">
+<h4 data-number="7.1.1.5" class="anchored" data-anchor-id="gee-on-practical"><span class="header-section-number">7.1.1.5</span> GEE on practical</h4>
+<p>For this practice I positioned myself in Beijing and classified the polygon into high density urban go, low density urban areas, water bodies and agricultural land for land cover.<br>
+</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK7DATA/NDVI.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">NDVI</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK7DATA/sub.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">SUBPIXEL</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK7DATA/object.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Object</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="application" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
+<p><strong>Mapping land cover and land use from object-based classification: an example from a complex agricultural landscape</strong></p>
+<p>The author quantitatively compared the results of OBIA-based versus per-pixel classifications for both land cover and land use, respectively. Our results show that land-cover classification was not significantly improved when OBIA-based methods were used. Although overall classification accuracy was modest, land-use classification was significantly improved when OBIA-based methods were applied using both spectral and spatial/geometric features of image objects, but not when spectral or spatial/geometric features were used independently.</p>
+<p><strong>study area</strong> The study area for this analysis was an area along the Ukraine–Poland border, encompassing parts of Volyn oblast (on the Ukrainian side) and Lubelski volveldeship on the Polish side.</p>
+<ul>
+<li>the reason :<br>
+It is heavily agricultural, and because it encompasses a variety of agricultural practices that result in fields with contrasting sizes and shapes. It therefore provides a challenging landscape on which to test whether object-based methods can improve land-cover or land-use classification.</li>
+</ul>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK7DATA/06.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Map of the study area. Latitude and longitude coordinates for the lower left and upper right are in degrees. Source: <a href="https://www.tandfonline.com/doi/full/10.1080/01431161.2015.1088674?scroll=top&amp;needAccess=true&amp;role=tab">Goodin, et al</a></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Methodology</strong><br>
+</p>
+<ol type="1">
+<li>using both spectral and spatial/geometric object features (henceforth referred to as OBIA-combined)<br>
+</li>
+<li>using only object spectral features (OBIA-spectral)<br>
+</li>
+<li>using only spatial and geometric object properties (OBIA-spatial)<br>
+</li>
+</ol>
+<p><strong>Output</strong></p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="WEEK7DATA/07.jpeg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Results from the per-pixel (a) and OBIA-combined (b) classifications</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>comment</strong>:The reading shows that object-based methods can improve the accuracy of land-use classifications, and a visual comparison of OBIA combined and pixel-by-pixel classification results shows that pixel-by-pixel classification has more fine-scale variability or heterogeneity than object-based classification. It is worth noting that, the results presented here were obtained with moderate spatial resolution data. The results may or may not be generalizable to classification performed with finer or coarser resolution data.</p>
+</section>
+<section id="reflection" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
+<p>Through this week’s study of obia, I have learnt that it is a powerful tool in image analysis and remote sensing applications. These techniques have revolutionised the way we analyse and interpret satellite and aerial imagery, allowing us to extract meaningful information from complex images that would be difficult to obtain using traditional pixel-based methods. These analytical methods have revolutionised the way we analyse and interpret remote sensing data, allowing us to extract more accurate and meaningful information from complex imagery. Through my literature reading, I understand that these techniques are equally important for disaster response, and will study other literature carefully when I have time afterwards.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -455,12 +649,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./week6.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week6</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week8.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week8</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Urban Heated Island</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

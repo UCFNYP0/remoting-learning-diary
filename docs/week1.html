@@ -145,12 +145,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week5</span></a>
+  <a href="./week5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week6</span></a>
+  <a href="./week6.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -160,12 +160,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week8</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="./week8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Urban Heated Island</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -186,7 +181,8 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#the-introduction-of-remote-sensing" id="toc-the-introduction-of-remote-sensing" class="nav-link" data-scroll-target="#the-introduction-of-remote-sensing"><span class="toc-section-number">1.1.1</span>  The introduction of remote sensing</a></li>
   <li><a href="#sensor" id="toc-sensor" class="nav-link" data-scroll-target="#sensor"><span class="toc-section-number">1.1.2</span>  Sensor</a></li>
-  <li><a href="#remotely-sensed-data" id="toc-remotely-sensed-data" class="nav-link" data-scroll-target="#remotely-sensed-data"><span class="toc-section-number">1.1.3</span>  Remotely sensed data</a></li>
+  <li><a href="#electromagnetic-spectrum" id="toc-electromagnetic-spectrum" class="nav-link" data-scroll-target="#electromagnetic-spectrum"><span class="toc-section-number">1.1.3</span>  Electromagnetic Spectrum</a></li>
+  <li><a href="#remotely-sensed-data" id="toc-remotely-sensed-data" class="nav-link" data-scroll-target="#remotely-sensed-data"><span class="toc-section-number">1.1.4</span>  Remotely sensed data</a></li>
   </ul></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">1.2</span>  Application</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">1.3</span>  Reflection</a></li>
@@ -221,6 +217,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="sensor" class="level3" data-number="1.1.2">
 <h3 data-number="1.1.2" class="anchored" data-anchor-id="sensor"><span class="header-section-number">1.1.2</span> Sensor</h3>
+<section id="type" class="level4" data-number="1.1.2.1">
+<h4 data-number="1.1.2.1" class="anchored" data-anchor-id="type"><span class="header-section-number">1.1.2.1</span> Type</h4>
 <table class="table">
 <colgroup>
 <col style="width: 51%">
@@ -248,9 +246,46 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing#sensors"><img src="sensors.png" class="img-fluid figure-img" width="672"></a></p>
 </figure>
 </div>
+<p>In addition, they can also be divided into imaging and non-imaging methods according to the recording method.</p>
+<p><strong>Imaging mode sensors</strong> represent the intensity of the received electromagnetic wave energy in the form of images, such as aerial cameras, scanners, imaging spectrometers.</p>
+<p><strong>Non-imaging mode sensors</strong>way to detect the intensity of the electromagnetic wave energy of the ground in the form of digital, curved graphical representation, such as radiometer, infrared radiation thermometer.</p>
 </section>
-<section id="remotely-sensed-data" class="level3" data-number="1.1.3">
-<h3 data-number="1.1.3" class="anchored" data-anchor-id="remotely-sensed-data"><span class="header-section-number">1.1.3</span> Remotely sensed data</h3>
+<section id="component" class="level4" data-number="1.1.2.2">
+<h4 data-number="1.1.2.2" class="anchored" data-anchor-id="component"><span class="header-section-number">1.1.2.2</span> Component</h4>
+<p>1.Collector: collects the electromagnetic energy from the ground. For example, lenses for aerial cameras, reflectors for scanners, etc.</p>
+<p>2.Detector: converts the collected radiant energy into chemical or electrical energy.</p>
+<p>3.Processors: Process the detected signals, such as chemical or electrical energy. For example, film development and fixing, amplification of electrical signals, filtering, modulation, conversion, etc.</p>
+<p>4.Output: Outputs the images and data obtained. For example, photographic film, magnetic tape recorders, etc.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week1data/flow.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Processing. Source: From Yujin Pan</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="electromagnetic-spectrum" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="electromagnetic-spectrum"><span class="header-section-number">1.1.3</span> Electromagnetic Spectrum</h3>
+<p>Electromagnetic energy travels in waves and spans a broad spectrum from very long radio waves to very short gamma rays. The human eye can only detect only a small portion of this spectrum called visible light.</p>
+<p><strong>Protective Atmosphere</strong></p>
+<p>The atmosphere protects us from a range of high-energy waves that are harmful to life. It likewise absorbs electromagnetic radiation. Among these are mainly water vapour, carbon dioxide and ozone.These regions of the spectrum with wavelengths that can pass through the atmosphere are referred to as “atmospheric windows.” Some microwaves can even pass through clouds, which make them the best wavelength for transmitting satellite communication signals. Because most electromagnetic radiation from space is unable to reach the surface of the Earth, for long-term observations, it is best to have your detector on an orbiting satellite.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="week1data/intro-1.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Electromagnetic Spectrum. Source:(https://science.nasa.gov/ems/01_intro)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="remotely-sensed-data" class="level3" data-number="1.1.4">
+<h3 data-number="1.1.4" class="anchored" data-anchor-id="remotely-sensed-data"><span class="header-section-number">1.1.4</span> Remotely sensed data</h3>
 <ul>
 <li>Format</li>
 </ul>
@@ -261,9 +296,9 @@ ul.task-list li input[type="checkbox"] {
 <p>Resolution has a important role in how data from a sensor can be used. there are four types of resolution to consider for any dataset-radiometric, spatial, spectral, and temporal.</p>
 <table class="table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 48%">
-<col style="width: 34%">
+<col style="width: 25%">
+<col style="width: 43%">
+<col style="width: 31%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -299,10 +334,40 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="application" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="application"><span class="header-section-number">1.2</span> Application</h2>
-<p>Remote sensing has a wide range of applications in many fields. For example, Remote sensing is widely used in agriculture.Traditionally, satellite imagery has been used for crop condition assessment and type mapping of crops, but due to the limited resolution of the sensors, satellites have been used over large areas. With technological advances, finer subscale green can enable remote sensing applications in the field for disaster assessments such as droughts and floods(Wójtowicz M,2016).Through the application of remote sensing, producers and governments can prevent natural disasters in advance and minimise economic losses.Remote sensing also plays an important role in crop yield forecasting. In the Southern Alberta of Canada, for example, remote sensing is used to assess the extent to which the area is vulnerable to drought conditions and to make yield forecasts. This can provide some support for local agricultural planning and reduce economic risk(Xu W,2011).</p>
+<p>Remote sensing has a wide range of applications in many fields. For example, Remote sensing is widely used in agriculture.Traditionally, satellite imagery has been used for crop condition assessment and type mapping of crops, but due to the limited resolution of the sensors, satellites have been used over large areas. With technological advances, finer subscale green can enable remote sensing applications in the field for disaster assessments such as droughts and floods(Wójtowicz M,2016).What’s more, the NDVI index is used most frequently to determine the condition, developmental stages and biomass of cultivated plants and to forecasts their yields. The NDVI has become the most commonly used vegetation index (Wallace et al.&nbsp;2004, Calvao and Palmeirim 2004).Through the application of remote sensing, producers and governments can prevent natural disasters in advance and minimise economic losses.<br>
+</p>
+<p>Remote sensing also plays an important role in crop yield forecasting. In the Southern Alberta of Canada, for example, remote sensing is used to assess the extent to which the area is vulnerable to drought conditions and to make yield forecasts. This can provide some support for local agricultural planning and reduce economic risk(Xu W,2011).<br>
+</p>
+<ul>
+<li><p>Study area: Agricultural production in southern Alberta<br>
+</p></li>
+<li><p>Data selection: In order to assess in detail the vulnerability of agriculture to drought, remotely sensed imagery was used in the empirical analysis. The years 1998, 1999 and 2001 were selected as representative of changes in precipitation conditions. Two Landsat TM/ETM+ images for each selected year were also acquired and overlaid to improve the accuracy of the land use cover.<br>
+</p></li>
+<li><p>Research methodology: In this paper, sensitivity and health status and exposure were selected as the three influencing factors of vulnerability.<br>
+The first step was to identify crop types using supervised classification to prepare the ground for measuring agricultural vulnerability later. And the NDVI of the image area classified as a cereal crop is used as the main independent variable for yield estimation in the subsequent regression analysis.<br>
+By calculating the vulnerability coefficient of the crop, the regression is then used to predict the crop yield.</p></li>
+</ul>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="week1data/grain1.gif" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Spatial distribution of average crop yield (1998,1999, and 2001)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Comment</li>
+</ul>
+<p>The authors have used remote sensing data to predict crop yields and to analyse the impact of drought on a large area of the region, providing powerful data for local agricultural development. The remote sensing data is available free of charge as open source data, which certainly facilitates agricultural analysis.</p>
 </section>
 <section id="reflection" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">1.3</span> Reflection</h2>
+<p>1Remote sensing technology has been widely used in many fields, such as environmental protection, geological exploration, weather forecasting, agricultural production and urban planning. It provides us with a wealth of information about the Earth and gives us a better understanding of its changes and evolution.</p>
+<p>2.It can be used to produce a variety of maps and spatial information products such as digital elevation models, vegetation index maps, land use/cover maps, etc. These products can provide accurate descriptions and analyses of the Earth’s surface features.</p>
+<p>3.The rapid development of remote sensing technology has resulted in much lower data acquisition costs and more efficient data processing and analysis. This has allowed an increasing number of institutions and individuals to use remote sensing technology for research and applications.</p>
+<p>4.The applications of remote sensing data in many areas are yet to be further developed, for example, in the field of urban planning and environmental protection, remote sensing data can help us to better assess and predict the impact of urban development and environmental change, and improve the sustainability of cities and the environment.</p>
 <p>Through this week’s study, I have gained an initial understanding of remote sensing, which I have not studied before. It is useful for me.I have learnt about the types of remote sensors, the format of remote sensing data and the resolution this week. However, my extra-curricular study of remote sensing is far from adequate. I have only studied the application areas of remote sensing in detail from agriculture this week, but I have not studied marine exploration and emergency disaster relief in depth.</p>
 
 
