@@ -108,7 +108,7 @@ knitr::include_graphics('week4_data/URHI.png')
 knitr::include_graphics('week4_data/urhi2.png')
 ```
 
-The UHRI is significantly positively associated with the proportion of children, SC, agricultural workers, households with assets and households with electricity (p \< 0.01), but negatively associated (p \< 0.005) with the proportion of educated residents, households that own a home and larger households[@liu2015a].\
+The UHRI is significantly positively associated with the proportion of children, SC, agricultural workers, households with assets and households with electricity (p \< 0.01), but negatively associated (p \< 0.005) with the proportion of educated residents, households that own a home and larger households.\
 
 Through correlation analysis and spatial visualisation of areas with high heat exposure indices, government funding for social vulnerability related factors such as households with severe poverty and electricity, schools, in addition to focusing not only on the heat island environment in the central city, it was shown through the strong correlation between agricultural labour and NDVI that the government should also focus on the population in the urban periphery. The correlation study aims to make a valuable contribution to the integration of climate justice considerations into climate change planning in Delhi by demonstrating which vulnerable groups should be prioritised in the policy if the urban heated island.
 
